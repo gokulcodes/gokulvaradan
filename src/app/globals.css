@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+* {
+  transition: all 0.5s ease;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Space Mono", monospace;
+  --animate-openUp: openUp 0.2s ease-in;
+  @keyframes openUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+      transform-origin: center;
+    }
+    100% {
+      /* height: 10px; */
+      opacity: 1;
+      transform: translateY(0px);
+      transform-origin: center;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Space Mono", monospace;
+}
+
+.animated-gradient {
+  filter: drop-shadow(0 0 4em #2dfffcaa);
+  animation: gradientAnimation 2s infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    filter: drop-shadow(0 0 4em #2dfffcaa);
+  }
+  50% {
+    filter: drop-shadow(0 0 4em #ffd82daa);
+  }
+  100% {
+    filter: drop-shadow(0 0 4em #2dfffcaa);
+  }
+}
