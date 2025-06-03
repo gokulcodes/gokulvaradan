@@ -30,9 +30,9 @@ export default function Home() {
         <div className="flex flex-col gap-6 items-center">
           {/* <div className="animated-gradient" /> */}
           <Image
-            className="animated-gradient"
-            src="/next.svg"
-            alt="Next.js logo"
+            className="animated-gradient rounded-full border border-white"
+            src="/gv.png"
+            alt="GV logo"
             width={150}
             height={38}
             priority
@@ -40,9 +40,9 @@ export default function Home() {
           <div className="flex flex-col gap-4 items-center">
             <h1
               style={{ fontWeight: "bolder" }}
-              className="md:text-5xl bg-gradient-to-b from-white to-white/40 text-transparent bg-clip-text text-3xl"
+              className="md:text-6xl font-display bg-gradient-to-b from-white to-white/40 text-transparent bg-clip-text text-3xl"
             >{`I'm Gokul Varadan`}</h1>
-            <p className="text-center text-xl leading-8 opacity-80">
+            <p className="text-center md:text-xl text-sm md:leading-8 leading-6 opacity-80">
               {`I'm a Full Stack Engineer with a strong passion for building powerful
           and elegant applications using JavaScript and its ecosystem.`}
             </p>
@@ -52,7 +52,7 @@ export default function Home() {
         <div className="flex flex-col items-center gap-8">
           <h2
             style={{ letterSpacing: "10px" }}
-            className="uppercase opacity-60"
+            className="uppercase font-display opacity-60"
           >
             Projects
           </h2>
@@ -73,7 +73,7 @@ export default function Home() {
                   height={38}
                   priority
                 />
-                <p>{project.name}</p>
+                <p className="font-display text-center">{project.name}</p>
               </a>
             ))}
           </div>

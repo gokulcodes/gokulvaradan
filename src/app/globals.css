@@ -13,6 +13,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: "Space Mono", monospace;
+  --font-display: "Host Grotesk", sans-serif;
   --animate-openUp: openUp 0.2s ease-in;
   @keyframes openUp {
     0% {
