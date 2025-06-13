@@ -14,18 +14,16 @@ export default function Hero() {
         gsap.fromTo(
           self.words,
           {
-            delay: 0.2,
             y: 400,
             opacity: 1,
             autoAlpha: 0,
           },
           {
-            delay: 0.2,
             duration: 1,
             opacity: 1,
             y: 0,
             autoAlpha: 1,
-            stagger: 0.05,
+            stagger: 0.01,
           }
         );
       },
@@ -37,64 +35,17 @@ export default function Hero() {
         gsap.fromTo(
           self.chars,
           {
-            delay: 0.2,
+            delay: 0.1,
             y: 400,
             opacity: 1,
             autoAlpha: 0,
           },
           {
-            delay: 0.2,
-            duration: 1,
+            delay: 0.1,
             opacity: 1,
             y: 0,
             autoAlpha: 1,
-            stagger: 0.05,
-          }
-        );
-      },
-    });
-    new SplitText(".paragraph-2", {
-      type: "words, chars",
-      mask: "words",
-      onSplit(self) {
-        gsap.fromTo(
-          self.chars,
-          {
-            delay: 0.2,
-            y: 400,
-            opacity: 1,
-            autoAlpha: 0,
-          },
-          {
-            delay: 0.2,
-            duration: 1,
-            opacity: 1,
-            y: 0,
-            autoAlpha: 1,
-            stagger: 0.05,
-          }
-        );
-      },
-    });
-    new SplitText(".paragraph-3", {
-      type: "words, chars",
-      mask: "words",
-      onSplit(self) {
-        gsap.fromTo(
-          self.chars,
-          {
-            delay: 0.2,
-            y: 400,
-            opacity: 1,
-            autoAlpha: 0,
-          },
-          {
-            delay: 0.2,
-            duration: 1,
-            opacity: 1,
-            y: 0,
-            autoAlpha: 1,
-            stagger: 0.05,
+            stagger: 0.02,
           }
         );
       },
@@ -104,7 +55,7 @@ export default function Hero() {
   return (
     <div
       ref={heroRef}
-      className="flex justify-center items-center w-full h-[100vh]"
+      className="flex justify-center relative items-center w-full h-[100vh]"
     >
       <div className="flex flex-col border-x dark:border-white/10 dark:invert-0 invert border-black/10 w-11/12 max-w-6xl gap-5 md:gap-10 items-center md:items-start justify-center md:w-full h-full z-0">
         <Image
@@ -121,8 +72,8 @@ export default function Hero() {
             I&apos;m <span className="text-primary">Gokul Varadan</span>
           </span>
         </h1>
-        <div className="flex text-center md:text-left font-extrabold text-3xl md:text-5xl flex-col items-start font-display description">
-          <p className="paragraph-1 leading-12 md:leading-18">
+        <div className="flex text-center md:text-left font-extrabold text-2xl md:text-6xl flex-col items-start font-display description">
+          <p className="paragraph-1 leading-12 md:leading-20">
             <span
               style={{
                 WebkitTextStroke: "4px white",
@@ -133,10 +84,7 @@ export default function Hero() {
             >
               Passionate
             </span>{" "}
-            Software Engineer
-          </p>
-          <p className="paragraph-2 leading-12 md:leading-18">
-            specialized{" "}
+            Software Engineer specialized{" "}
             <span
               style={{
                 WebkitTextStroke: "4px white",
@@ -146,11 +94,23 @@ export default function Hero() {
               className="text-background"
             >
               in building
-            </span>
-          </p>
-          <p className="paragraph-3 leading-12 md:leading-18">
+            </span>{" "}
             User-Centric Applications
           </p>
+          {/* <p className="paragraph-2 leading-12 md:leading-18"></p>
+          <p className="paragraph-3 leading-12 md:leading-18"></p> */}
+        </div>
+        <div className="absolute  bottom-20 opacity-60 flex justify-center self-center mt-20">
+          <a href="#about" className="animate-bounce text-3xl text-gray-700">
+            <Image
+              src="/scroll.png"
+              className="invert w-10"
+              alt=""
+              width={100}
+              height={100}
+              loading="lazy"
+            />
+          </a>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ export default function Header() {
       const links: Array<HTMLButtonElement> = gsap.utils.toArray(".link");
       links.forEach((link: HTMLButtonElement) => {
         const tween = gsap.to(link, {
-          duration: 1,
+          duration: 0.5,
           scrambleText: {
             text: link.textContent ?? "",
             chars: Array(link.textContent?.length ?? 0)

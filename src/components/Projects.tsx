@@ -22,7 +22,7 @@ export default function Projects() {
           {content.projects.map((project) => (
             <div
               key={project.projectName}
-              className="border sticky top-20 border-white bg-background p-8 md:p-20 flex flex-col gap-4 drop-shadow-[0px_20px_0px_rgba(255,255,255,0.5)]"
+              className="border sticky top-20 border-white bg-background p-6 md:p-20 flex flex-col gap-4 drop-shadow-[0px_20px_0px_rgba(255,255,255,0.5)]"
             >
               <div className="flex w-full justify-between">
                 <p className="uppercase font-extralight tracking-title text-xs">
@@ -32,7 +32,7 @@ export default function Projects() {
                   June 2025
                 </p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-start gap-2">
                 {project.logo ? (
                   <Image
                     src={project.logo}
@@ -45,7 +45,7 @@ export default function Projects() {
                     loading="lazy"
                   />
                 ) : (
-                  <div className="w-4 bg-white h-8" />
+                  <div className="w-4 bg-primary h-10" />
                 )}
                 <h2 className="text-3xl md:text-4xl">{project.projectName}</h2>
               </div>
@@ -58,7 +58,7 @@ export default function Projects() {
                   {project.techStack.map((stack) => (
                     <p
                       key={stack}
-                      className="px-5 py-2 border font-extralight text-xs tracking-widest bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)] uppercase"
+                      className="px-5 py-2 border font-extralight text-xs tracking-widest bg-background border-white drop-shadow-[5px_5px_0px_rgba(72,223,105,0.5)] uppercase"
                     >
                       {stack}
                     </p>

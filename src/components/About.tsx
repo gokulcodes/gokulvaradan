@@ -23,7 +23,7 @@ export default function About() {
               opacity: 1,
               y: 0,
               autoAlpha: 1,
-              stagger: 0.05,
+              stagger: 0.03,
               scrollTrigger: {
                 trigger: "#stats",
                 start: "top 95%", // Trigger when #stats top reaches 80% of viewport
@@ -53,7 +53,7 @@ export default function About() {
               opacity: 1,
               y: 0,
               autoAlpha: 1,
-              stagger: 0.05,
+              stagger: 0.03,
               scrollTrigger: {
                 trigger: "#stats",
                 start: "top 95%", // Trigger when #stats top reaches 80% of viewport
@@ -65,11 +65,11 @@ export default function About() {
       });
     }
     new SplitText("#about-content", {
-      type: "lines",
-      mask: "lines",
+      type: "words, chars",
+      mask: "words",
       onSplit(self) {
         gsap.fromTo(
-          self.lines,
+          self.words,
           {
             duration: 1.5,
             y: 200,
@@ -79,10 +79,10 @@ export default function About() {
             duration: 1.5,
             scrollTrigger: {
               trigger: "#about",
-              start: "top 99%", // Trigger when #stats top reaches 80% of viewport
+              start: "top 99.5%", // Trigger when #stats top reaches 80% of viewport
               toggleActions: "play none none none", // Play once
             },
-            stagger: 0.05,
+            stagger: 0.01,
           }
         );
       },
@@ -102,7 +102,7 @@ export default function About() {
           />
           <p
             id="about-content"
-            className="font-sans font-light leading-10 text-lg md:text-left text-center md:text-xl"
+            className="font-sans font-light leading-10 text-lg md:text-left text-center md:text-xl break-words"
           >
             {content.about}
           </p>
