@@ -9,23 +9,23 @@ export default function Splash() {
 
   useGSAP(
     () => {
-      gsap.fromTo(
-        splashRef.current,
-        {
-          delay: 2,
-          ease: "power4.inOut",
-          height: "100vh",
-          //   duration: 1,
-          //   opacity: 1,
-        },
-        {
-          delay: 2,
-          ease: "power4.inOut",
-          height: "0vh",
-          //   duration: 1,
-          //   opacity: 0,
-        }
-      );
+      // gsap.fromTo(
+      //   splashRef.current,
+      //   {
+      //     delay: 2,
+      //     ease: "power4.inOut",
+      //     height: "100vh",
+      //     //   duration: 1,
+      //     //   opacity: 1,
+      //   },
+      //   {
+      //     delay: 2,
+      //     ease: "power4.inOut",
+      //     height: "0vh",
+      //     //   duration: 1,
+      //     //   opacity: 0,
+      //   }
+      // );
       gsap.fromTo(
         ".splashImage",
         {
