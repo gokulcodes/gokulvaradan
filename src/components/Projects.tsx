@@ -1,0 +1,97 @@
+import Image from "next/image";
+import content from "../../content.json";
+export default function Projects() {
+  return (
+    <div
+      id="projects"
+      className="w-full flex flex-col items-center justify-center font-display"
+    >
+      <Image
+        src="/projects.png"
+        className="w-full h-full"
+        alt=""
+        width={1000}
+        height={1000}
+        loading="lazy"
+      />
+      <div className="max-w-6xl w-11/12 md:w-full border-x border-black/10 pt-10 dark:border-white/10 flex flex-col gap-10 h-full items-start justify-start">
+        <p className="px-5 py-2 sticky top-3 border bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)]">
+          Projects
+        </p>
+        <div className="flex flex-col w-full gap-20">
+          {content.projects.map((project) => (
+            <div
+              key={project.projectName}
+              className="border sticky top-20 border-white bg-background p-8 md:p-20 flex flex-col gap-4 drop-shadow-[0px_20px_0px_rgba(255,255,255,0.5)]"
+            >
+              <div className="flex w-full justify-between">
+                <p className="uppercase font-extralight tracking-title text-xs">
+                  Hobby
+                </p>
+                <p className="uppercase font-extralight tracking-widest text-xs">
+                  June 2025
+                </p>
+              </div>
+              <div className="flex items-center gap-2">
+                {project.logo ? (
+                  <Image
+                    src={project.logo}
+                    className={`w-10 transform ${
+                      project.projectName === "Circles" ? "scale-150" : ""
+                    } `}
+                    alt=""
+                    width={100}
+                    height={100}
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="w-4 bg-white h-8" />
+                )}
+                <h2 className="text-3xl md:text-4xl">{project.projectName}</h2>
+              </div>
+              <p className="font-extralight font-sans text-base md:text-lg leading-8">
+                {project.description}
+              </p>
+              <div className="flex flex-col items-start gap-4 mt-4">
+                <p className="text-base mt-2 font-medium">Tech Stack</p>
+                <div className="flex flex-wrap gap-4 md:gap-10">
+                  {project.techStack.map((stack) => (
+                    <p
+                      key={stack}
+                      className="px-5 py-2 border font-extralight text-xs tracking-widest bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)] uppercase"
+                    >
+                      {stack}
+                    </p>
+                  ))}
+                </div>
+              </div>
+              <div className="flex flex-col items-start gap-4 mt-4">
+                <p className="text-base mt-2 font-medium">Links</p>
+                <div className="flex flex-wrap gap-4 md:gap-10">
+                  {project.links.map((link) => (
+                    <a
+                      href={link}
+                      key={link}
+                      target="_blank"
+                      className="flex gap-2 uppercase font-light text-sm link hover:text-primary"
+                    >
+                      {new URL(link).host}
+                      <Image
+                        src="/redirect.svg"
+                        className="w-5 dark:invert"
+                        alt=""
+                        width={100}
+                        height={100}
+                        loading="lazy"
+                      />
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

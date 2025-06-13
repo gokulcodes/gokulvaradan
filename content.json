@@ -1,0 +1,117 @@
+{
+  "about": "Welcome to my corner of the web! I'm a Full Stack Software Engineer with a strong passion for building powerful and elegant applications using JavaScript and its ecosystem.",
+  "stats": [
+    {
+      "title": "4+ Years",
+      "description": "Industrial Experience"
+    },
+    {
+      "title": "4 Projects",
+      "description": "that solve Real world Problems"
+    },
+    {
+      "title": "2+ Years",
+      "description": "As Freelance Developer"
+    }
+  ],
+  "experience": [
+    {
+      "companyName": "Synamedia",
+      "highlights": [
+        "Playing a pivotal role in a team responsible for creating a versatile cross-platform application, ensuring compatibility and optimal performance across mobile devices, web platforms, and hyperscale TV devices.",
+        "Developed comprehensive automated test scripts for internal modules using GitHub Actions to streamline development process.",
+        "Enhanced application performance significantly by implementing React Suspense and Lazy loading techniques, effectively reducing main thread load in browsers and optimizing user experience."
+      ],
+      "positionTitle": "Software Engineer",
+      "startDate": "2022-11-21T00:00+05:30",
+      "techStack": ["Nextjs", "aws", "reactjs", "rest API", "Video Player"]
+    },
+    {
+      "companyName": "alter.game",
+      "highlights": [
+        "Lead the development of a cutting-edge 3D NFT marketplace platform from scratch using Next.js.",
+        "Implemented ThreeJS to provide users with an immersive experience, allowing them to render and upload 3D models for trading within the marketplace.",
+        "Automated the deployment process by creating a front-end build script that triggers deployment with every commit to the source control system."
+      ],
+      "positionTitle": "Full Stack Engineer",
+      "startDate": "2021-08-21T00:00+05:30",
+      "endDate": "2022-10-24T00:00+05:30",
+      "techStack": [
+        "Threejs",
+        "nextjs",
+        "aws",
+        "graphql",
+        "react native",
+        "rest API"
+      ]
+    },
+    {
+      "companyName": "Freelance",
+      "highlights": [
+        "Optimized our company site with lighthouse testing and achieved growth in app downloads by 80%",
+        "Developed a separate recruiting platform which helps to increase hiring ratio by 100%",
+        "Created a production-ready chat application in React Native for ~10,000 daily active users."
+      ],
+      "positionTitle": "Web development",
+      "startDate": "2019-06-05T00:00+05:30",
+      "endDate": "2021-08-05T00:00+05:30",
+      "techStack": ["reactjs", "aws", "graphql", "rest API"]
+    }
+  ],
+  "projects": [
+    {
+      "projectName": "Ideal Editor",
+      "logo": "/ideal.svg",
+      "description": "A minimal, fast, and distraction-free text editor built for the web. Perfect for taking quick notes, writing drafts, or capturing ideas on the go — all with seamless cloud storage.",
+      "techStack": ["nextjs", "vercel", "typescript"],
+      "links": [
+        "https://github.com/gokulcodes/ideal-editor-web/",
+        "https://ideal.gokulcodes.dev/"
+      ]
+    },
+    {
+      "projectName": "Markdown Canvas",
+      "description": "A lightweight, modular Markdown-to-HTML parser that supports all essential markdown features—including headings, lists, tables, blockquotes, code blocks, multimedia embedding, and rich word formatting",
+      "techStack": ["nextjs", "vercel", "markdown-parser"],
+      "links": [
+        "https://github.com/gokulcodes/markdown-canvas",
+        "https://markdown.gokulcodes.dev/",
+        "https://www.npmjs.com/package/@gokulvaradan/markdown-parser"
+      ]
+    },
+    {
+      "projectName": "Gamuts",
+      "logo": "/gamuts.svg",
+      "description": "A minimal, fast, and distraction-free text editor built for the web. Perfect for taking quick notes, writing drafts, or capturing ideas on the go — all with seamless cloud storage.",
+      "techStack": ["reactjs", "vite", "typescript", "canvas"],
+      "links": [
+        "https://github.com/gokulcodes/gamuts",
+        "https://gamuts.gokulcodes.dev/"
+      ]
+    },
+    {
+      "projectName": "Circles",
+      "logo": "/circles.svg",
+      "description": "A text based distraction-free personal space for connecting with your closed circles.",
+      "techStack": ["nextjs", "typescript", "graphql", "aws"],
+      "links": [
+        "https://github.com/gokulcodes/circles",
+        "https://circles.gokulcodes.dev/"
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Released internal college student database in symposium",
+      "date": "June 2019"
+    },
+    {
+      "title": "3* in CodeChef",
+      "date": "Feb 2022"
+    },
+    {
+      "title": "Solved over 2000+ problems across coding platform",
+      "date": "June 2025"
+    }
+  ]
+}

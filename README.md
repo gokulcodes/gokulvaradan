@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GokulVaradan
 
-## Getting Started
+### Tech stack
 
-First, run the development server:
+- NextJS
+- GSAP
+- ThreeJS
+- All text content should be taken from a JSON
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Animations
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Loading Screen with text GokulCodes.dev on it with background outline logo move horizontally
+- After 2sec, move the loading screen to left and reveal the hero section
+- Hero Section Contains only text, so the text animation should be top notch
+- About section, text reveal should be smooth and engaging, left logo should animate with DrawSVG effect
+- Stats Section, text animation should match hero text animation, but in the vertical way
+- Experience section, horizontal navigation starts here. It should be snap scroll each experience scroll in horizontal way
+- Backdrop images should display all the project i've worked on.Images should be isometric display
+- Projects section, on scroll, each project should scroll on top of the previous project making it look like stack of cards
+- Achievements Section, a normal text reveal animation is fine
+- Tech Stack droppers section, on scroll in, all the tech stack cards should drop from top to bottom in a irregular way
+  each card should be draggable
+- Footer - Normal text reveal animation for links, DrawSVG animation from big bold Gokul Varadan Text
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Unknowns
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Don't know how to do text animations
+- Horizontal Navigation
+- Card Stack animation for Projects section
+- HyperLinks Hover - text scramble animation
+- On project click, do view-transition animation to reveal the entire details about the application
+- Dark / Light mode switcher animation

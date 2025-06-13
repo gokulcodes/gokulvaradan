@@ -2,6 +2,7 @@
 
 * {
   transition: all 0.5s ease;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -12,9 +13,11 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Space Mono", monospace;
-  --font-display: "Host Grotesk", sans-serif;
-  --animate-openUp: openUp 0.2s ease-in;
+  --color-primary: #48df69;
+  --font-sans: "Host Grotesk", sans-serif;
+  --font-display: "Unbounded", sans-serif;
+  --animate-openUp: 1s openUp 1s ease-in;
+  --tracking-title: 10px;
   @keyframes openUp {
     0% {
       opacity: 0;
