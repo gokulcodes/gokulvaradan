@@ -59,7 +59,7 @@ export default function RootLayout({
       <meta property="og:url" content="https://gokulcodes.dev/" />
       <meta
         property="og:image"
-        content="https://avatars.githubusercontent.com/u/51291254?s=400&u=dae101ff18eea2cf1428d3cb8385ab7260689a85&v=4"
+        content="https://raw.githubusercontent.com/gokulcodes/gokulvaradan/refs/heads/main/public/poster.png"
       />
       <meta property="og:site_name" content="Gokul Varadan" />
 
