@@ -3,7 +3,7 @@ import content from "../../content.json";
 export default function Achievements() {
   return (
     <div className="w-full flex items-start font-display justify-center">
-      <div className="max-w-6xl w-11/12 md:w-full border-x border-black/10 pt-40 dark:border-white/10 flex flex-col gap-10 h-full items-start justify-start">
+      <div className="max-w-6xl w-11/12 md:w-full border-x border-black/10 pt-40 dark:border-white/20 flex flex-col gap-10 h-full items-start justify-start">
         <p className="px-5 py-2 border bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)]">
           Achievements
         </p>

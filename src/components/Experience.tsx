@@ -34,7 +34,7 @@ export default function Experience() {
       id="experiences"
       className="w-full flex items-start justify-center"
     >
-      <div className="max-w-6xl w-11/12 md:w-full border-x border-black/10 pt-40 dark:border-white/10 flex flex-col gap-10 h-full items-start justify-start pb-20">
+      <div className="max-w-6xl w-11/12 md:w-full border-x border-black/10 pt-40 dark:border-white/20 flex flex-col gap-10 h-full items-start justify-start pb-20">
         <p className="px-5 py-2 sticky top-3 border font-display bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)]">
           My Experience
         </p>
@@ -42,7 +42,7 @@ export default function Experience() {
           {content.experience.map((exp) => (
             <div
               key={exp.positionTitle}
-              className="flex flex-col sticky top-20 drop-shadow-[0px_-5px_20px_rgba(255,255,255,0.1)] bg-background h-full p-6 md:p-20 border border-white font-display gap-2 experience w-full"
+              className="flex flex-col sticky top-20 drop-shadow-[0px_-5px_20px_rgba(255,255,255,0.1)] bg-background/40 backdrop-blur-2xl h-full p-6 md:p-20 border border-white font-display gap-2 experience w-full"
             >
               <div className="flex flex-col md:flex-row w-full justify-between gap-2">
                 <p className="uppercase font-extralight tracking-title text-base md:text-xs ">

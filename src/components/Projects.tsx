@@ -14,7 +14,7 @@ export default function Projects() {
         height={1000}
         loading="lazy"
       />
-      <div className="max-w-6xl w-11/12 md:w-full border-x border-black/10 pt-10 dark:border-white/10 flex flex-col gap-10 h-full items-start justify-start">
+      <div className="max-w-6xl w-11/12 md:w-full border-x border-black/10 pt-10 dark:border-white/20 flex flex-col gap-10 h-full items-start justify-start">
         <p className="px-5 py-2 sticky top-3 border bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)]">
           Projects
         </p>
@@ -22,7 +22,7 @@ export default function Projects() {
           {content.projects.map((project) => (
             <div
               key={project.projectName}
-              className="border sticky top-20 border-white bg-background p-6 md:p-20 flex flex-col gap-4 drop-shadow-[0px_20px_0px_rgba(255,255,255,0.5)]"
+              className="border sticky top-20 border-white bg-background/40 backdrop-blur-2xl p-6 md:p-20 flex flex-col gap-4"
             >
               <div className="flex w-full justify-between">
                 <p className="uppercase font-extralight tracking-title text-xs">

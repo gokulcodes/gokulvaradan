@@ -57,7 +57,7 @@ export default function Hero() {
       ref={heroRef}
       className="flex justify-center relative items-center w-full h-[100vh]"
     >
-      <div className="flex flex-col border-x dark:border-white/10 dark:invert-0 invert border-black/10 w-11/12 max-w-6xl gap-5 md:gap-10 items-center md:items-start justify-center md:w-full h-full z-0">
+      <div className="flex flex-col border-x dark:border-white/20 dark:invert-0 invert border-black/10 w-11/12 max-w-6xl gap-5 md:gap-10 items-center md:items-start justify-center md:w-full h-full z-0">
         <Image
           src="/profile.svg"
           className="w-12 animate-openUp md:hidden"
