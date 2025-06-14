@@ -79,7 +79,7 @@ export default function About() {
             duration: 1.5,
             scrollTrigger: {
               trigger: "#about",
-              start: "top 99.5%", // Trigger when #stats top reaches 80% of viewport
+              start: "top bottom", // Trigger when #stats top reaches 80% of viewport
               toggleActions: "play none none none", // Play once
             },
             stagger: 0.01,

@@ -20,7 +20,7 @@ export default function Footer() {
   // }, {});
   return (
     <footer className="w-full h-full flex items-center justify-center footer">
-      <div className="max-w-6xl w-11/12 md:w-full border-x border-black/10 pt-20 md:pt-40 dark:border-white/20 flex flex-col gap-10 md:gap-20 h-full items-start justify-start">
+      <div className="max-w-6xl w-11/12 md:w-full border-x border-black/10 pt-20 md:pt-20 dark:border-white/20 flex flex-col gap-10 md:gap-20 h-full items-start justify-start">
         <div className="flex flex-col gap-10 md:flex-row w-full justify-between font-display">
           <div className="flex flex-col items-start gap-2">
             <p className="uppercase tracking-widest opacity-50 text-sm ">

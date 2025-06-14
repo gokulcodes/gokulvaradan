@@ -29,23 +29,23 @@ export default function Hero() {
       },
     });
     new SplitText(".paragraph-1", {
-      type: "words, chars",
-      mask: "words",
+      type: "words, lines",
+      mask: "lines",
       onSplit(self) {
         gsap.fromTo(
-          self.chars,
+          self.lines,
           {
-            delay: 0.1,
+            delay: 0.9,
             y: 400,
-            opacity: 1,
+            opacity: 0,
             autoAlpha: 0,
           },
           {
-            delay: 0.1,
+            delay: 0.9,
             opacity: 1,
             y: 0,
             autoAlpha: 1,
-            stagger: 0.02,
+            stagger: 0.05,
           }
         );
       },
@@ -57,7 +57,7 @@ export default function Hero() {
       ref={heroRef}
       className="flex justify-center relative items-center w-full h-[100vh]"
     >
-      <div className="flex flex-col border-x dark:border-white/20 dark:invert-0 invert border-black/10 w-11/12 max-w-6xl gap-5 md:gap-10 items-center md:items-start justify-center md:w-full h-full z-0">
+      <div className="flex flex-col border-x dark:border-white/20 border-black/10 w-11/12 max-w-6xl gap-5 md:gap-10 items-center md:items-start justify-center md:w-full h-full z-0">
         <Image
           src="/profile.svg"
           className="w-12 animate-openUp md:hidden"
@@ -72,8 +72,8 @@ export default function Hero() {
             I&apos;m <span className="text-primary">Gokul Varadan</span>
           </span>
         </h1>
-        <div className="flex text-center md:text-left font-extrabold text-2xl md:text-6xl flex-col items-start font-display description">
-          <p className="paragraph-1 leading-12 md:leading-20">
+        <div className="flex text-center md:text-left font-extrabold text-3xl md:text-6xl flex-col items-start font-display description">
+          <p className="paragraph-1 leading-12 md:leading-22">
             <span
               style={{
                 WebkitTextStroke: "4px white",

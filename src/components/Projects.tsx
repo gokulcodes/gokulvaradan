@@ -7,7 +7,7 @@ export default function Projects() {
       className="w-full flex flex-col items-center justify-center font-display"
     >
       <Image
-        src="/projects.png"
+        src="/projects.svg"
         className="w-full h-full"
         alt=""
         width={1000}
@@ -29,7 +29,7 @@ export default function Projects() {
                   Hobby
                 </p>
                 <p className="uppercase font-extralight tracking-widest text-xs">
-                  June 2025
+                  {project.date}
                 </p>
               </div>
               <div className="flex items-start gap-2">
@@ -73,12 +73,12 @@ export default function Projects() {
                       href={link}
                       key={link}
                       target="_blank"
-                      className="flex gap-2 uppercase font-light text-sm link hover:text-primary"
+                      className="flex gap-1 uppercase font-light text-xs link hover:text-primary items-center"
                     >
                       {new URL(link).host}
                       <Image
                         src="/redirect.svg"
-                        className="w-5 dark:invert"
+                        className="w-4 invert"
                         alt=""
                         width={100}
                         height={100}

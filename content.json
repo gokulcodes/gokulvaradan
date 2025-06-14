@@ -60,8 +60,28 @@
   ],
   "projects": [
     {
+      "projectName": "Markdown Canvas",
+      "description": "A lightweight, modular Markdown-to-HTML parser that supports all essential markdown features—including headings, lists, tables, blockquotes, code blocks, multimedia embedding, and rich word formatting",
+      "techStack": ["nextjs", "vercel", "markdown-parser"],
+      "date": "April 2025",
+      "links": [
+        "https://github.com/gokulcodes/markdown-canvas",
+        "https://markdown.gokulcodes.dev/",
+        "https://www.npmjs.com/package/@gokulvaradan/markdown-parser"
+      ]
+    },
+    {
+      "projectName": "Lattize",
+      "logo": "/lattize.svg",
+      "date": "April 2025",
+      "description": "A Chrome DevTools extension that shows overall performance metrics of any website.",
+      "techStack": ["ReactJS", "CRXJS", "Vite", "Chrome Extension"],
+      "links": ["https://github.com/gokulcodes/lattize"]
+    },
+    {
       "projectName": "Ideal Editor",
       "logo": "/ideal.svg",
+      "date": "April 2025",
       "description": "A minimal, fast, and distraction-free text editor built for the web. Perfect for taking quick notes, writing drafts, or capturing ideas on the go — all with seamless cloud storage.",
       "techStack": ["nextjs", "vercel", "typescript"],
       "links": [
@@ -70,18 +90,9 @@
       ]
     },
     {
-      "projectName": "Markdown Canvas",
-      "description": "A lightweight, modular Markdown-to-HTML parser that supports all essential markdown features—including headings, lists, tables, blockquotes, code blocks, multimedia embedding, and rich word formatting",
-      "techStack": ["nextjs", "vercel", "markdown-parser"],
-      "links": [
-        "https://github.com/gokulcodes/markdown-canvas",
-        "https://markdown.gokulcodes.dev/",
-        "https://www.npmjs.com/package/@gokulvaradan/markdown-parser"
-      ]
-    },
-    {
       "projectName": "Gamuts",
       "logo": "/gamuts.svg",
+      "date": "May 2025",
       "description": "A minimal, fast, and distraction-free text editor built for the web. Perfect for taking quick notes, writing drafts, or capturing ideas on the go — all with seamless cloud storage.",
       "techStack": ["reactjs", "vite", "typescript", "canvas"],
       "links": [
@@ -92,6 +103,7 @@
     {
       "projectName": "Circles",
       "logo": "/circles.svg",
+      "date": "June 2025",
       "description": "A text based distraction-free personal space for connecting with your closed circles.",
       "techStack": ["nextjs", "typescript", "graphql", "aws"],
       "links": [
@@ -113,5 +125,23 @@
       "title": "Solved over 2000+ problems across coding platform",
       "date": "June 2025"
     }
+  ],
+  "stacks": [
+    "Reactjs",
+    "Nodejs",
+    "Graphql",
+    "Mongodb",
+    "Nextjs",
+    "GSAP",
+    "Threejs",
+    "Video Players",
+    "Tailwindcss",
+    "Sass",
+    "Algorithms",
+    "data structures",
+    "Typescript",
+    "JavaScript",
+    "Python",
+    "Go"
   ]
 }
