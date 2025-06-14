@@ -90,11 +90,11 @@ export default function About() {
   }, {});
   return (
     <div id="about" className="flex w-full justify-center items-center">
-      <div className="flex flex-col gap-20 border-x border-black/10 dark:border-white/20 w-11/12 md:w-full max-w-6xl">
+      <div className="flex flex-col gap-20 border-x border-white/20 w-11/12 md:w-full max-w-6xl">
         <div className="flex flex-col md:flex-row gap-10 p-6 justify-center items-center">
           <Image
             src="/about.svg"
-            className="dark:invert w-96 p-4"
+            className="invert w-96 p-4"
             alt=""
             width={1000}
             height={1000}

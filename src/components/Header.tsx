@@ -47,7 +47,7 @@ export default function Header() {
         </a>
         <Image
           src="/logo.svg"
-          className="dark:invert w-8"
+          className="w-8"
           alt=""
           width={1000}
           height={1000}

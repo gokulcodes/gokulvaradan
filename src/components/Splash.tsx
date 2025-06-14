@@ -114,14 +114,14 @@ export default function Splash() {
   return (
     <div
       ref={splashRef}
-      className="absolute top-0 left-0 w-full dark:bg-background bg-white overflow-hidden h-[100vh] splash z-50"
+      className="absolute top-0 left-0 w-full bg-background overflow-hidden h-[100vh] splash z-50"
     >
       <div className="flex items-center absolute top-[25%] md:top-0 -z-10 left-0 w-full gap-32 justify-center transform scale-200 splashImage md:scale-150">
         {Array.from({ length: 10 }).map((_, index) => (
           <Image
             key={index}
             src="/splash_bg.svg"
-            className="dark:invert scale-110"
+            className="invert scale-110"
             alt=""
             width={1000}
             height={1000}

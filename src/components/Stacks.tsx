@@ -34,13 +34,13 @@ export default function Stacks() {
       id="stacks"
       className="w-full flex items-center justify-center stacks "
     >
-      <div className="max-w-6xl w-11/12 md:w-full border-x pt-20 border-black/10 dark:border-white/20 flex flex-col gap-10 h-full items-end justify-end">
-        <div className="flex flex-wrap gap-6 md:gap-8 items-end border overflow-hidden py-20  bg-white/2">
+      <div className="max-w-6xl w-11/12 md:w-full border-x pt-20 border-white/20 flex flex-col gap-10 h-full items-end justify-end">
+        <div className="flex flex-wrap gap-6 md:gap-8 items-center justify-center border overflow-hidden py-20  bg-white/2">
           {content.stacks.map((stack, index) => (
             <p
               key={stack}
               id={`stack-${index}`}
-              className="px-5 py-2 font-display text-sm md:text-base uppercase font-light sticky top-3 border bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)]"
+              className="px-5 py-2 font-display text-sm uppercase font-light sticky top-3 border bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)]"
             >
               {stack}
             </p>

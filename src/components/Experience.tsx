@@ -34,7 +34,7 @@ export default function Experience() {
       id="experiences"
       className="w-full flex items-start justify-center"
     >
-      <div className="max-w-6xl w-11/12 md:w-full border-x border-black/10 pt-40 dark:border-white/20 flex flex-col gap-10 h-full items-start justify-start pb-20">
+      <div className="max-w-6xl w-11/12 md:w-full border-x border-white/20 pt-40  flex flex-col gap-10 h-full items-start justify-start pb-20">
         <p className="px-5 py-2 sticky top-3 border font-display bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)]">
           My Experience
         </p>
@@ -60,7 +60,7 @@ export default function Experience() {
                     : "Present"}
                 </p>
               </div>
-              <h2 className="text-2xl md:text-4xl font-bold text-primary">
+              <h2 className="text-2xl md:text-4xl mt-4 font-bold text-primary">
                 {exp.positionTitle}
               </h2>
               <div className="font-extralight w-full">
