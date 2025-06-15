@@ -109,22 +109,22 @@ export default function About() {
         </div>
         <div
           id="stats"
-          className="flex md:flex-row flex-wrap flex-col gap-5 2xl:gap-10 items-start justify-evenly"
+          className="flex md:flex-row flex-wrap flex-col gap-8 2xl:gap-10 items-center justify-evenly"
         >
           {content.stats.map((stat, index) => (
             <div
               key={stat.title}
-              className="flex flex-col w-2/5 gap-1 items-center justify-center"
+              className="flex flex-col w-full 2xl:w-2/5 gap-1 items-center justify-center"
             >
               <p
                 id={`stat-title-${index}`}
-                className="text-xl 2xl:text-3xl text-center text-primary font-display font-bold"
+                className="text-2xl 2xl:text-3xl text-center text-primary font-display font-bold"
               >
                 {stat.title}
               </p>
               <p
                 id={`stat-description-${index}`}
-                className="font-display w-full text-xs text-center leading-5 2xl:text-base font-extralight"
+                className="font-display w-full text-sm text-center leading-5 2xl:text-base font-extralight"
               >
                 {stat.description}
               </p>
