@@ -12,14 +12,14 @@ export default function Splash() {
       gsap.fromTo(
         splashRef.current,
         {
-          delay: 2,
+          delay: 1.5,
           ease: "power4.inOut",
           height: "100vh",
           //   duration: 1,
           //   opacity: 1,
         },
         {
-          delay: 2,
+          delay: 1.5,
           ease: "power4.inOut",
           height: "0vh",
           //   duration: 1,
@@ -48,40 +48,17 @@ export default function Splash() {
           gsap.fromTo(
             self.lines,
             {
-              y: 400,
+              y: 500,
               opacity: 1,
               autoAlpha: 0,
-              //   scrambleText: {
-              //     text: "I'm Gokul Varadan",
-              //     chars: "XO",
-              //     speed: 0.4,
-              //   },
             },
             {
-              duration: 1,
               opacity: 1,
               y: 0,
-              //   scrambleText: {
-              //     text: "I'm Gokul Varadan",
-              //     chars: "XO",
-              //     speed: 0.4,
-              //   },
               autoAlpha: 1,
               stagger: 0.05,
             }
           );
-          // self.lines.forEach((line) => {
-          //   gsap.to(line, {
-          //     duration: 5,
-          //     scrambleText: {
-          //       text: "I'm Gokul Varadan", // could customize per line
-          //       chars: "1X$O3",
-          //       speed: 0.4,
-          //     },
-          //     ease: "expo.inOut",
-          //     delay: 0.2,
-          //   });
-          // });
         },
       });
       new SplitText(".splash-text-1", {
@@ -91,13 +68,11 @@ export default function Splash() {
           gsap.fromTo(
             self.chars,
             {
-              delay: 0.2,
               y: 400,
               opacity: 1,
               autoAlpha: 0,
             },
             {
-              delay: 0.2,
               duration: 1,
               opacity: 1,
               y: 0,

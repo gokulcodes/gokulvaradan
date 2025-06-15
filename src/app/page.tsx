@@ -46,7 +46,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setShowPage(true);
-    }, 2000);
+    }, 1500);
   }, []);
 
   // useGSAP(

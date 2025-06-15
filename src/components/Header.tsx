@@ -16,7 +16,7 @@ export default function Header() {
           scrambleText: {
             text: link.textContent ?? "",
             chars: Array(link.textContent?.length ?? 0)
-              .fill(0)
+              .fill("dsafsdf")
               .join(""),
           },
           paused: true,

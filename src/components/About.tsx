@@ -131,6 +131,23 @@ export default function About() {
             </div>
           ))}
         </div>
+        <div className="w-full h-full flex items-center justify-center">
+          <a
+            target="_blank"
+            className="flex link items-center gap-2 font-extralight shadow-2xl text-sm font-display cursor-pointer hover:drop-shadow-[10px_10px_0px_rgba(72,223,105,0.5)] p-4 md:px-8 md:py-3 hover:text-primary border border-primary right-5 md:right-10 bg-background drop-shadow-[5px_5px_0px_rgba(72,223,105,0.5)]"
+            href="https://github.com/gokulcodes"
+          >
+            View on GitHub
+            <Image
+              src="/redirect.svg"
+              className="w-4 invert"
+              alt=""
+              width={100}
+              height={100}
+              loading="lazy"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

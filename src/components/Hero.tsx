@@ -111,7 +111,18 @@ export default function Hero() {
             >
               in building
             </span>{" "}
-            User-Centric Applications
+            User-Centric{" "}
+            <span
+              style={{
+                WebkitTextStroke: "4px white",
+                paintOrder: "stroke fill",
+                // color: "#0a0a0a",
+              }}
+              className="text-background"
+            >
+              Applications{" "}
+            </span>
+            at Scale
           </p>
           {/* <p className="paragraph-2 leading-12 md:leading-18"></p>
           <p className="paragraph-3 leading-12 md:leading-18"></p> */}
