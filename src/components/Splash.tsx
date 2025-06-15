@@ -105,10 +105,16 @@ export default function Splash() {
         ))}
       </div>
       <div className="flex flex-col w-full items-center justify-center h-full">
-        <p className="splash-text-0 font-display uppercase text-6xl font-bold">
+        <p
+          aria-label="Gokul"
+          className="splash-text-0 font-display uppercase text-6xl font-bold"
+        >
           Gokul
         </p>
-        <p className="splash-text-1 font-display font-semibold uppercase text-primary text-4xl">
+        <p
+          aria-label="Codes.dev"
+          className="splash-text-1 font-display font-semibold uppercase text-primary text-4xl"
+        >
           Codes.dev
         </p>
       </div>

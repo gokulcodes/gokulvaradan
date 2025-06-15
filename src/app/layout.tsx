@@ -62,6 +62,10 @@ export default function RootLayout({
         content="https://raw.githubusercontent.com/gokulcodes/gokulvaradan/refs/heads/main/public/poster.png"
       />
       <meta property="og:site_name" content="Gokul Varadan" />
+      <meta
+        property="keywords"
+        content="Gokul Varadan, gokulvaradan, portfolio, projects, gamuts, ideal editor, circles"
+      />
 
       <meta property="og:locale" content="en_US" />
       <meta property="og:updated_time" content="2025-06-13T06:42:11.155Z" />

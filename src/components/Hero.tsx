@@ -89,7 +89,10 @@ export default function Hero() {
           </span>
         </h1>
         <div className="flex w-full text-center md:text-left font-extrabold text-3xl md:text-4xl 2xl:text-6xl flex-col items-start font-display description">
-          <p className="paragraph-1 w-full leading-12 md:leading-18 2xl:leading-22">
+          <p
+            aria-label="Passionate Software Engineer specialized in building User-Centric Applications at Scale"
+            className="paragraph-1 w-full leading-12 md:leading-18 2xl:leading-22"
+          >
             <span
               style={{
                 WebkitTextStroke: "4px white",
