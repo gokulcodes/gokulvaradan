@@ -6,7 +6,7 @@ import { SplitText } from "gsap/all";
 
 export default function About() {
   useGSAP(() => {
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < content.stats.length; i++) {
       new SplitText(`#stat-title-${i}`, {
         type: "words, chars",
         mask: "words",
@@ -90,11 +90,11 @@ export default function About() {
   }, {});
   return (
     <div id="about" className="flex w-full justify-center items-center">
-      <div className="flex flex-col gap-20 border-x border-white/20 w-11/12 md:w-full max-w-6xl">
+      <div className="flex flex-col gap-20 border-x border-white/20 w-11/12 md:w-full max-w-4xl 2xl:max-w-6xl ">
         <div className="flex flex-col md:flex-row gap-10 p-6 justify-center items-center">
           <Image
             src="/about.svg"
-            className="invert w-96 p-4"
+            className="invert w-54 md:w-72 2xl:w-96 p-4"
             alt=""
             width={1000}
             height={1000}
@@ -102,29 +102,29 @@ export default function About() {
           />
           <p
             id="about-content"
-            className="font-sans font-light leading-10 text-lg md:text-left text-center md:text-xl break-words"
+            className="font-sans font-light leading-10 text-lg md:text-left text-center md:text-lg 2xl:text-xl break-words"
           >
             {content.about}
           </p>
         </div>
         <div
           id="stats"
-          className="flex md:flex-row flex-col gap-10 items-center justify-evenly"
+          className="flex md:flex-row flex-wrap flex-col gap-5 2xl:gap-10 items-start justify-evenly"
         >
           {content.stats.map((stat, index) => (
             <div
               key={stat.title}
-              className="flex flex-col items-center justify-center"
+              className="flex flex-col w-2/5 gap-1 items-center justify-center"
             >
               <p
                 id={`stat-title-${index}`}
-                className="text-3xl text-primary font-display font-bold"
+                className="text-xl 2xl:text-3xl text-center text-primary font-display font-bold"
               >
                 {stat.title}
               </p>
               <p
                 id={`stat-description-${index}`}
-                className="font-display font-extralight"
+                className="font-display w-full text-xs text-center leading-5 2xl:text-base font-extralight"
               >
                 {stat.description}
               </p>

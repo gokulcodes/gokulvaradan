@@ -14,7 +14,7 @@ export default function Projects() {
         height={1000}
         loading="lazy"
       />
-      <div className="max-w-6xl w-11/12 md:w-full border-x pt-10 border-white/20 flex flex-col gap-10 h-full items-start justify-start">
+      <div className="2xl:max-w-6xl max-w-4xl w-11/12 md:w-full border-x pt-10 border-white/20 flex flex-col gap-10 h-full items-start justify-start">
         <p className="px-5 py-2 sticky top-3 border bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)]">
           Projects
         </p>
@@ -22,7 +22,7 @@ export default function Projects() {
           {content.projects.map((project) => (
             <div
               key={project.projectName}
-              className="border sticky top-20 border-white bg-background/40 backdrop-blur-2xl p-6 md:p-20 flex flex-col gap-4"
+              className="border sticky top-20 border-white bg-background/40 backdrop-blur-2xl p-6 md:p-10 2xl:p-20 flex flex-col gap-4"
             >
               <div className="flex w-full justify-between">
                 <p className="uppercase font-extralight tracking-title text-xs">
@@ -45,11 +45,11 @@ export default function Projects() {
                     loading="lazy"
                   />
                 ) : (
-                  <div className="w-4 bg-primary h-10" />
+                  <div className="w-4 bg-primary h-8 2xl:h-10" />
                 )}
-                <h2 className="text-3xl md:text-4xl">{project.projectName}</h2>
+                <h2 className="text-2xl 2xl:text-4xl">{project.projectName}</h2>
               </div>
-              <p className="font-extralight font-sans text-base md:text-lg leading-8">
+              <p className="font-extralight font-sans text-sm md:text-base 2xl:text-lg leading-8">
                 {project.description}
               </p>
               <div className="flex flex-col items-start gap-4 mt-4">

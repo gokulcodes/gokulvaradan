@@ -34,7 +34,7 @@ export default function Experience() {
       id="experiences"
       className="w-full flex items-start justify-center"
     >
-      <div className="max-w-6xl w-11/12 md:w-full border-x border-white/20 pt-40  flex flex-col gap-10 h-full items-start justify-start pb-20">
+      <div className="2xl:max-w-6xl max-w-4xl w-11/12 md:w-full border-x border-white/20 pt-40 flex flex-col gap-10 h-full items-start justify-start pb-20">
         <p className="px-5 py-2 sticky top-3 border font-display bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)]">
           My Experience
         </p>
@@ -42,7 +42,7 @@ export default function Experience() {
           {content.experience.map((exp) => (
             <div
               key={exp.positionTitle}
-              className="flex flex-col sticky top-20 drop-shadow-[0px_-5px_20px_rgba(255,255,255,0.1)] bg-background/40 backdrop-blur-2xl h-full p-6 md:p-20 border border-white font-display gap-2 experience w-full"
+              className="flex flex-col sticky top-20 drop-shadow-[0px_-5px_20px_rgba(255,255,255,0.1)] bg-background/40 backdrop-blur-2xl h-full p-6 md:p-10 2xl:p-20 border border-white font-display gap-2 experience w-full"
             >
               <div className="flex flex-col md:flex-row w-full justify-between gap-2">
                 <p className="uppercase font-extralight tracking-title text-base md:text-xs ">
@@ -60,17 +60,17 @@ export default function Experience() {
                     : "Present"}
                 </p>
               </div>
-              <h2 className="text-2xl md:text-4xl mt-4 font-bold text-primary">
+              <h2 className="text-2xl 2xl:text-4xl mt-4 font-bold text-primary">
                 {exp.positionTitle}
               </h2>
               <div className="font-extralight w-full">
-                <p className="text-sm md:text-base mt-4 font-medium">
+                <p className="text-xs md:text-sm 2xl:text-base mt-4 font-medium">
                   Key Highlights
                 </p>
-                <ul className="font-sans list-disc leading-10 pl-4 md:pl-6 mt-2 break-words">
+                <ul className=" font-sans list-disc leading-10 pl-4 md:pl-6 mt-2 break-words">
                   {exp.highlights.map((highlight, index) => (
                     <li
-                      className="text-base leading-9 md:leading-10 md:text-xl"
+                      className="text-sm 2xl:text-xl leading-9  md:leading-9 2xl:leading-10 md:text-base"
                       key={index}
                     >
                       {highlight}
@@ -79,12 +79,14 @@ export default function Experience() {
                 </ul>
               </div>
               <div className="flex flex-col items-start gap-4 mt-4">
-                <p className="text-base mt-2 font-medium">Tech Stack</p>
+                <p className="text-xs md:text-sm 2xl:text-base mt-2 font-medium">
+                  Tech Stack
+                </p>
                 <div className="flex flex-wrap gap-4 md:gap-10">
                   {exp.techStack.map((stack) => (
                     <p
                       key={stack}
-                      className="px-5 py-2 border font-extralight text-xs md:text-sm bg-background border-white drop-shadow-[5px_5px_0px_rgba(72,223,105,0.5)] uppercase"
+                      className="px-5 py-2 border font-extralight text-xs md:text-xs 2xl:text-sm bg-background border-white drop-shadow-[5px_5px_0px_rgba(72,223,105,0.5)] uppercase"
                     >
                       {stack}
                     </p>

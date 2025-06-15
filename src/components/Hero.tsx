@@ -73,7 +73,7 @@ export default function Hero() {
       ref={heroRef}
       className="flex justify-center relative items-center w-full h-[100vh]"
     >
-      <div className="flex flex-col border-x overflow-hidden relative border-white/20 w-11/12 max-w-6xl gap-5 md:gap-10 items-center md:items-start justify-center md:w-full h-full z-0">
+      <div className="flex flex-col border-x overflow-hidden relative border-white/20 w-11/12 max-w-4xl 2xl:max-w-6xl gap-5 md:gap-5 2xl:gap-10 items-center md:items-start justify-center lg:w-full h-full z-0">
         <Image
           src="/profile.svg"
           className="w-12 animate-openUp md:hidden"
@@ -82,14 +82,14 @@ export default function Hero() {
           height={100}
           loading="lazy"
         />
-        <h1 className="hero-text-1 flex justify-center md:justify-start w-full  items-center gap-2 font-display font-light text-xl md:text-3xl">
+        <h1 className="hero-text-1 flex justify-center md:justify-start w-full  items-center gap-2 font-display font-light text-xl md:text-2xl 2xl:text-3xl">
           Hello!{" "}
           <span className="font-medium ">
             I&apos;m <span className="text-primary">Gokul Varadan</span>
           </span>
         </h1>
-        <div className="flex text-center md:text-left font-extrabold text-3xl md:text-6xl flex-col items-start font-display description">
-          <p className="paragraph-1 leading-12 md:leading-22">
+        <div className="flex w-full text-center md:text-left font-extrabold text-3xl md:text-4xl 2xl:text-6xl flex-col items-start font-display description">
+          <p className="paragraph-1 w-full leading-12 md:leading-18 2xl:leading-22">
             <span
               style={{
                 WebkitTextStroke: "4px white",
@@ -128,10 +128,10 @@ export default function Hero() {
             />
           </a>
         </div>
-        <div className="absolute opacity-40 w-full h-full -left-96 md:scale-100 scale-90 top-30 md:top-40 md:-left-36">
+        <div className="absolute -z-10 opacity-40 w-full h-full -left-96 md:scale-100 scale-90 top-30 md:top-10 2xl:top-20 md:-left-72 2xl:-left-36">
           <svg
             width="1356"
-            height="783"
+            height="100%"
             viewBox="0 0 1356 783"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

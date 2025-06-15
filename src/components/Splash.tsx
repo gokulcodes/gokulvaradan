@@ -116,7 +116,7 @@ export default function Splash() {
       ref={splashRef}
       className="absolute top-0 left-0 w-full bg-background overflow-hidden h-[100vh] splash z-50"
     >
-      <div className="flex items-center absolute top-[25%] md:top-0 -z-10 left-0 w-full gap-32 justify-center transform scale-200 splashImage md:scale-150">
+      <div className="flex items-center h-full absolute -z-10 left-0 w-full gap-32 justify-center transform scale-200 splashImage md:scale-150">
         {Array.from({ length: 10 }).map((_, index) => (
           <Image
             key={index}

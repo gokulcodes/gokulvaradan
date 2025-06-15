@@ -186,10 +186,12 @@ export default function Home() {
             download={true}
             className="fixed flex items-center gap-2 font-extralight  shadow-2xl text-sm bottom-5 md:bottom-10 font-display cursor-pointer hover:drop-shadow-[10px_10px_0px_rgba(72,223,105,0.5)] p-4 md:px-6 md:py-4 hover:text-primary border border-primary right-5 md:right-10 bg-background drop-shadow-[5px_5px_0px_rgba(72,223,105,0.5)]"
           >
-            <p className="link hidden md:block ">Export Resume</p>
+            <p className="link hidden md:block text-xs 2xl:text-base ">
+              Export Resume
+            </p>
             <Image
               src="/download.svg"
-              className="w-4 md:w-5 invert"
+              className="w-4 2xl:w-5 invert"
               alt=""
               width={100}
               height={100}
