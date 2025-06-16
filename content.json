@@ -1,5 +1,5 @@
 {
-  "about": "Welcome to my corner of the web! I'm a Full Stack Software Engineer with a strong passion for building powerful and elegant applications using JavaScript and its ecosystem.",
+  "about": "Welcome to my corner of the web! I'm a Full Stack Software Engineer driven by a deep curiosity and a passion for crafting powerful, elegant, and scalable applications using JavaScript/TypeScript and its ecosystem.",
   "stats": [
     {
       "title": "4+ Years",
@@ -10,7 +10,7 @@
       "description": "In side projects"
     },
     {
-      "title": "4 Projects",
+      "title": "5 Projects",
       "description": "that solve Real world Problems"
     },
     {
@@ -65,9 +65,11 @@
   "projects": [
     {
       "projectName": "Markdown Canvas",
+      "shortDescription": "A lightweight, modular Markdown-to-HTML parser that supports all essential markdown features—including headings, lists, tables, blockquotes, code blocks, multimedia embedding, and rich word formatting",
       "description": "A lightweight, modular Markdown-to-HTML parser that supports all essential markdown features—including headings, lists, tables, blockquotes, code blocks, multimedia embedding, and rich word formatting",
       "techStack": ["nextjs", "vercel", "markdown-parser"],
       "date": "April 2025",
+      "preview": ["", ""],
       "links": [
         "https://github.com/gokulcodes/markdown-canvas",
         "https://markdown.gokulcodes.dev/",
@@ -78,6 +80,8 @@
       "projectName": "Lattize",
       "logo": "/lattize.svg",
       "date": "April 2025",
+      "shortDescription": "A Chrome DevTools extension that shows overall performance metrics of any website.",
+      "preview": ["", ""],
       "description": "A Chrome DevTools extension that shows overall performance metrics of any website.",
       "techStack": ["ReactJS", "CRXJS", "Vite", "Chrome Extension"],
       "links": ["https://github.com/gokulcodes/lattize"]
@@ -86,6 +90,8 @@
       "projectName": "Ideal Editor",
       "logo": "/ideal.svg",
       "date": "April 2025",
+      "shortDescription": "A minimal, fast, and distraction-free text editor built for the web. Perfect for taking quick notes, writing drafts, or capturing ideas on the go — all with seamless cloud storage.",
+      "preview": ["", ""],
       "description": "A minimal, fast, and distraction-free text editor built for the web. Perfect for taking quick notes, writing drafts, or capturing ideas on the go — all with seamless cloud storage.",
       "techStack": ["nextjs", "vercel", "typescript"],
       "links": [
@@ -97,6 +103,8 @@
       "projectName": "Gamuts",
       "logo": "/gamuts.svg",
       "date": "May 2025",
+      "shortDescription": "A minimal, fast, and distraction-free text editor built for the web. Perfect for taking quick notes, writing drafts, or capturing ideas on the go — all with seamless cloud storage.",
+      "preview": ["", ""],
       "description": "A minimal, fast, and distraction-free text editor built for the web. Perfect for taking quick notes, writing drafts, or capturing ideas on the go — all with seamless cloud storage.",
       "techStack": ["reactjs", "vite", "typescript", "canvas"],
       "links": [
@@ -108,6 +116,8 @@
       "projectName": "Circles",
       "logo": "/circles.svg",
       "date": "June 2025",
+      "preview": ["", ""],
+      "shortDescription": "A text based distraction-free personal space for connecting with your closed circles.",
       "description": "A text based distraction-free personal space for connecting with your closed circles.",
       "techStack": ["nextjs", "typescript", "graphql", "aws"],
       "links": [
@@ -135,10 +145,14 @@
     "Nodejs",
     "Graphql",
     "Mongodb",
+    "AWS",
+    "Cloud",
     "Nextjs",
     "GSAP",
     "Threejs",
     "Video Players",
+    "HTML",
+    "CSS",
     "Tailwindcss",
     "Sass",
     "Algorithms",

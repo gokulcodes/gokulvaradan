@@ -62,3 +62,60 @@ body {
     filter: drop-shadow(0 0 4em #2dfffcaa);
   }
 }
+
+@keyframes flip-old {
+  0% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(-90deg);
+    opacity: 1;
+  }
+  50.1% {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes flip-new {
+  0% {
+    opacity: 0;
+    transform: rotateX(0deg);
+  }
+  50% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50.1% {
+    opacity: 1;
+    transform: rotateX(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+::view-transition-image-pair(project) {
+  perspective: 1000px;
+}
+
+::view-transition-old(project),
+::view-transition-new(project) {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(project) {
+  animation: flip-old 0.4s both ease-in-out;
+}
+
+::view-transition-new(project) {
+  animation: flip-new 0.4s both ease-in-out;
+}

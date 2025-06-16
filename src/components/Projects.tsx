@@ -1,6 +1,24 @@
 import Image from "next/image";
 import content from "../../content.json";
+import ProjectModal from "./ProjectModal";
+import { useState } from "react";
 export default function Projects() {
+  const [currentProject, setCurrentProject] = useState(-1);
+
+  async function handleProjectModal(index: number) {
+    const transition = document.startViewTransition(() => {
+      setCurrentProject(index);
+    });
+    await transition.finished;
+  }
+
+  async function handleProjectClose() {
+    const transition = document.startViewTransition(() => {
+      setCurrentProject(-1);
+    });
+    await transition.finished;
+  }
+
   return (
     <div
       id="projects"
@@ -19,10 +37,12 @@ export default function Projects() {
           Projects
         </p>
         <div className="flex flex-col w-full gap-20">
-          {content.projects.map((project) => (
+          {content.projects.map((project, index) => (
             <div
               key={project.projectName}
-              className="border sticky top-20 border-white bg-background/40 backdrop-blur-2xl p-6 md:p-10 2xl:p-20 flex flex-col gap-4"
+              onClick={() => handleProjectModal(index)}
+              style={{ viewTransitionName: "project" }}
+              className="border sticky top-20 border-white hover:bg-background bg-background/40 backdrop-blur-2xl p-6 md:p-10 2xl:p-20 flex flex-col gap-4 hover:border-primary hover:drop-shadow-[10px_10px_0px_rgba(72,223,105,0.5)] cursor-pointer"
             >
               <div className="flex w-full justify-between">
                 <p className="uppercase font-extralight tracking-title text-xs">
@@ -58,7 +78,7 @@ export default function Projects() {
                   {project.techStack.map((stack) => (
                     <p
                       key={stack}
-                      className="px-5 py-2 border font-extralight text-xs tracking-widest bg-background border-white drop-shadow-[5px_5px_0px_rgba(72,223,105,0.5)] uppercase"
+                      className="px-5 py-2 border font-extralight text-xs tracking-widest bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)] uppercase"
                     >
                       {stack}
                     </p>
@@ -92,6 +112,12 @@ export default function Projects() {
           ))}
         </div>
       </div>
+      {currentProject >= 0 ? (
+        <ProjectModal
+          handleClose={handleProjectClose}
+          project={content.projects[currentProject]}
+        />
+      ) : null}
     </div>
   );
 }
