@@ -11,6 +11,16 @@ export default function Stacks() {
       Draggable.create(`#stack-${i}`, {
         bounds: ".stacks",
         inertia: true,
+        onDragStart: function () {
+          console.log("clicked", this.target.id);
+
+          gsap.to(this.target, 0.1, {
+            backgroundColor: "rgba(72,223,105,0.5)",
+          });
+        },
+        onDragEnd: function () {
+          gsap.to(this.target, 0.1, { backgroundColor: "#000" });
+        },
       });
 
       // Animate when #stacks is in the viewport

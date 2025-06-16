@@ -22,12 +22,13 @@ export default function ProjectModal(props: {
       style={{
         viewTransitionName: "project",
       }}
-      className="fixed top-0 left-0 w-full h-full flex items-center justify-center p-10 bg-background/95 backdrop-blur-2xl gap-20 z-50"
+      id="projectModal"
+      className="fixed top-0 left-0 w-full h-full flex flex-col md:flex-row items-center md:justify-center justify-start p-6 md:p-10 bg-background/80 backdrop-blur-2xl gap-10 md:gap-20 z-50 overflow-scroll py-20 md:mt-0"
     >
       <div className="w-full h-full border border-white drop-shadow-[10px_10px_0px_rgba(255,255,255,0.3)]">
         <Image
           src="/previews/circles/preview-0.png"
-          className="w-full h-full object-cover"
+          className="w-full md:h-full h-[500px] object-cover"
           alt="previews"
           width={1000}
           height={1000}
@@ -35,7 +36,7 @@ export default function ProjectModal(props: {
       </div>
       <div
         key={project?.projectName}
-        className="flex w-full flex-col justify-between h-10/12 gap-4"
+        className="flex w-full flex-col justify-between h-full md:h-10/12 gap-4"
       >
         <div className="flex flex-col gap-4">
           <div className="flex w-full justify-between">

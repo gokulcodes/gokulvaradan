@@ -7,6 +7,7 @@ export default function Projects() {
 
   async function handleProjectModal(index: number) {
     const transition = document.startViewTransition(() => {
+      document.body.style.overflow = "hidden";
       setCurrentProject(index);
     });
     await transition.finished;
@@ -14,6 +15,7 @@ export default function Projects() {
 
   async function handleProjectClose() {
     const transition = document.startViewTransition(() => {
+      document.body.style.overflow = "auto";
       setCurrentProject(-1);
     });
     await transition.finished;
