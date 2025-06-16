@@ -114,12 +114,12 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      {currentProject >= 0 ? (
-        <ProjectModal
-          handleClose={handleProjectClose}
-          project={content.projects[currentProject]}
-        />
-      ) : null}
+      <ProjectModal
+        handleClose={handleProjectClose}
+        project={currentProject == -1 ? null : content.projects[currentProject]}
+      />
+      {/* {currentProject >= 0 ? ( */}
+      {/* ) : null} */}
     </div>
   );
 }

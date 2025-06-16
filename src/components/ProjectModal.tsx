@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 type Project = {
   projectName: string;
   shortDescription: string;
@@ -12,7 +11,7 @@ type Project = {
 };
 
 export default function ProjectModal(props: {
-  project: Project;
+  project: Project | null;
   // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
   handleClose: Function;
 }) {
@@ -21,6 +20,9 @@ export default function ProjectModal(props: {
     <div
       style={{
         viewTransitionName: "project",
+        visibility: project ? "visible" : "hidden",
+        opacity: project ? 1 : 0,
+        pointerEvents: project ? "auto" : "none",
       }}
       id="projectModal"
       className="fixed top-0 left-0 w-full h-full flex flex-col md:flex-row items-center md:justify-center justify-start p-6 md:p-10 bg-background/80 backdrop-blur-2xl gap-10 md:gap-20 z-50 overflow-scroll py-20 md:mt-0"

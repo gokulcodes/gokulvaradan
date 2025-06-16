@@ -113,11 +113,11 @@ body {
 }
 
 ::view-transition-old(project) {
-  animation: flip-old 0.4s both ease-in-out;
+  animation: flip-old 0s both ease-in-out;
 }
 
 ::view-transition-new(project) {
-  animation: flip-new 0.4s both ease-in-out;
+  animation: flip-new 0s both ease-in-out;
 }
 
 #projectModal::-webkit-scrollbar {
