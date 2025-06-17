@@ -12,8 +12,6 @@ export default function Stacks() {
         bounds: ".stacks",
         inertia: true,
         onDragStart: function () {
-          console.log("clicked", this.target.id);
-
           gsap.to(this.target, 0.1, {
             backgroundColor: "rgba(72,223,105,0.5)",
           });
@@ -32,9 +30,9 @@ export default function Stacks() {
           start: "top 100%", // when top of #stacks hits bottom of viewport
           toggleActions: "play none none none",
         },
-        rotation: gsap.utils.random(-100, 100), // use runtime random, not string
-        duration: 1,
-        ease: "elastic",
+        rotation: gsap.utils.random(-1000, 1000), // use runtime random, not string
+        duration: 1.5,
+        ease: "circ",
       });
     }
   }, {});
