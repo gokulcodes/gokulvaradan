@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@gokulvaradan/markdown-parser": "^1.0.9",
+    "@gokulvaradan/markdown-parser": "^1.0.10",
     "@gsap/react": "^2.1.2",
     "gsap": "^3.13.0",
     "next": "15.3.3",
