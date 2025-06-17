@@ -69,6 +69,19 @@ export default function RootLayout({
 
       <meta property="og:locale" content="en_US" />
       <meta property="og:updated_time" content="2025-06-13T06:42:11.155Z" />
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-ZCDQR1BYP7"
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZCDQR1BYP7');`,
+        }}
+      ></script>
       {/* <link rel="icon"  href="/gamuts.svg" /> */}
       <body
         className="overflow-x-hidden"
