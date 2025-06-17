@@ -21,6 +21,18 @@ export default function Projects() {
     await transition.finished;
   }
 
+  function handleCustomMouseEnter() {
+    const customCursor = document.getElementById("custom-cursor");
+    if (customCursor) customCursor.style.opacity = "1";
+    document.getElementById("projects")?.classList.add("cursor-none");
+  }
+
+  function handleCustomMouseLeave() {
+    const customCursor = document.getElementById("custom-cursor");
+    if (customCursor) customCursor.style.opacity = "0";
+    document.getElementById("projects")?.classList.remove("cursor-none");
+  }
+
   return (
     <div
       id="projects"
@@ -34,7 +46,7 @@ export default function Projects() {
         height={1000}
         loading="lazy"
       />
-      <div className="2xl:max-w-6xl max-w-4xl w-11/12 md:w-full border-x pt-10 border-white/20 flex flex-col gap-10 h-full items-start justify-start">
+      <div className="2xl:max-w-7xl max-w-4xl w-11/12 md:w-full border-x pt-10 border-white/20 flex flex-col gap-10 h-full items-start justify-start">
         <p className="px-5 py-2 sticky top-3 border bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)]">
           Projects
         </p>
@@ -42,9 +54,11 @@ export default function Projects() {
           {content.projects.map((project, index) => (
             <div
               key={project.projectName}
+              onMouseEnter={handleCustomMouseEnter}
+              onMouseLeave={handleCustomMouseLeave}
               onClick={() => handleProjectModal(index)}
               style={{ viewTransitionName: "project" }}
-              className="border sticky top-20 border-white hover:bg-background bg-background/40 backdrop-blur-2xl p-6 md:p-10 2xl:p-20 flex flex-col gap-4 hover:border-primary hover:drop-shadow-[10px_10px_0px_rgba(72,223,105,0.5)] cursor-pointer"
+              className="border sticky top-20 border-white hover:bg-background bg-background/40 backdrop-blur-2xl p-6 md:p-10 2xl:p-20 flex flex-col gap-4 hover:border-primary hover:drop-shadow-[10px_10px_0px_rgba(72,223,105,0.5)]"
             >
               <div className="flex w-full justify-between">
                 <p className="uppercase font-extralight tracking-title text-xs">
@@ -72,7 +86,7 @@ export default function Projects() {
                 <h2 className="text-2xl 2xl:text-4xl">{project.projectName}</h2>
               </div>
               <p className="font-extralight font-sans text-sm md:text-base 2xl:text-lg leading-8">
-                {project.description}
+                {project.shortDescription}
               </p>
               <div className="flex flex-col items-start gap-4 mt-4">
                 <p className="text-base mt-2 font-medium">Tech Stack</p>

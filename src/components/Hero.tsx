@@ -73,7 +73,7 @@ export default function Hero() {
       ref={heroRef}
       className="flex justify-center relative items-center w-full h-[100vh]"
     >
-      <div className="flex flex-col border-x overflow-hidden relative border-white/20 w-11/12 max-w-4xl 2xl:max-w-6xl gap-5 md:gap-5 2xl:gap-10 items-center md:items-start justify-center lg:w-full h-full z-0">
+      <div className="flex flex-col border-x overflow-hidden relative border-white/20 w-11/12 max-w-4xl 2xl:max-w-7xl gap-5 md:gap-5 2xl:gap-10 items-center md:items-start justify-center lg:w-full h-full z-0">
         <Image
           src="/profile.svg"
           className="w-12 animate-openUp md:hidden"
@@ -144,7 +144,7 @@ export default function Hero() {
         </div>
         <div className="absolute -z-10 opacity-40 w-full h-full -left-96 md:scale-100 scale-90 top-30 md:top-10 2xl:top-20 md:-left-72 2xl:-left-36">
           <svg
-            width="1356"
+            width="1456"
             height="100%"
             viewBox="0 0 1356 783"
             fill="none"

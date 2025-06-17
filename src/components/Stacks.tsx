@@ -44,7 +44,7 @@ export default function Stacks() {
       id="stacks"
       className="w-full flex items-center justify-center stacks "
     >
-      <div className="2xl:max-w-6xl max-w-4xl w-11/12 md:w-full border-x pt-20 border-white/20 flex flex-col gap-10 h-full items-end justify-end">
+      <div className="2xl:max-w-7xl max-w-4xl w-11/12 md:w-full border-x pt-20 border-white/20 flex flex-col gap-10 h-full items-end justify-end">
         <div className="flex flex-wrap gap-6 md:gap-8 items-center justify-center border overflow-hidden py-20  bg-white/2">
           {content.stacks.map((stack, index) => (
             <p

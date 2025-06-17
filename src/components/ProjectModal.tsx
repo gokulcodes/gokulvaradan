@@ -1,3 +1,4 @@
+import markdown from "@gokulvaradan/markdown-parser";
 import Image from "next/image";
 type Project = {
   projectName: string;
@@ -5,7 +6,7 @@ type Project = {
   description: string;
   techStack: string[];
   date: string;
-  preview: string[];
+  preview: string;
   links: string[];
   logo?: string;
 };
@@ -16,6 +17,7 @@ export default function ProjectModal(props: {
   handleClose: Function;
 }) {
   const { project, handleClose } = props;
+
   return (
     <div
       style={{
@@ -25,20 +27,24 @@ export default function ProjectModal(props: {
         pointerEvents: project ? "auto" : "none",
       }}
       id="projectModal"
-      className="fixed top-0 left-0 w-full h-full flex flex-col md:flex-row items-center md:justify-center justify-start p-6 md:p-10 bg-background/80 backdrop-blur-2xl gap-10 md:gap-20 z-50 overflow-scroll py-20 md:mt-0"
+      className="fixed top-0 left-0 w-full h-full flex flex-col md:flex-row items-start md:justify-start justify-start p-6 md:p-10 bg-background/80 backdrop-blur-2xl gap-10 md:gap-15 z-50 overflow-scroll py-20 md:mt-0"
     >
-      <div className="w-full h-full border border-white drop-shadow-[10px_10px_0px_rgba(255,255,255,0.3)]">
-        <Image
-          src="/previews/circles/preview-0.png"
-          className="w-full md:h-full h-[500px] object-cover"
-          alt="previews"
-          width={1000}
-          height={1000}
-        />
+      <div className="w-full h-full md:sticky top-0 ">
+        <div className="md:h-full h-[500px] flex items-center justify-center w-full bg-white/5 border border-white/10">
+          {project?.preview ? (
+            <Image
+              src={`/previews${project?.preview}`}
+              className="w-11/12 border object-cover drop-shadow-[10px_10px_0px_rgba(255,255,255,0.3)]"
+              alt="previews"
+              width={1000}
+              height={1000}
+            />
+          ) : null}
+        </div>
       </div>
       <div
         key={project?.projectName}
-        className="flex w-full flex-col justify-between h-full md:h-10/12 gap-4"
+        className="flex w-full flex-col justify-between py-0 md:py-20 gap-4"
       >
         <div className="flex flex-col gap-4">
           <div className="flex w-full justify-between">
@@ -66,26 +72,7 @@ export default function ProjectModal(props: {
             )}
             <h2 className="text-2xl 2xl:text-4xl">{project?.projectName}</h2>
           </div>
-          <p className="font-extralight font-sans text-sm md:text-base 2xl:text-lg leading-8">
-            {project?.description}
-          </p>
-        </div>
-        <div className="flex flex-col gap-4">
-          <div className="flex flex-col items-start gap-4 mt-4">
-            <p className="text-base mt-2 font-medium">Tech Stack</p>
-            <div className="flex flex-wrap gap-4 md:gap-10">
-              {project?.techStack.map((stack) => (
-                <p
-                  key={stack}
-                  className="px-5 py-2 border font-extralight text-xs tracking-widest bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)] uppercase"
-                >
-                  {stack}
-                </p>
-              ))}
-            </div>
-          </div>
-          <div className="flex flex-col items-start gap-4 mt-4">
-            <p className="text-base mt-2 font-medium">Links</p>
+          <div className="flex flex-col items-start gap-4 mt-2 mb-4">
             <div className="flex flex-wrap gap-4 md:gap-10">
               {project?.links.map((link) => (
                 <a
@@ -104,6 +91,30 @@ export default function ProjectModal(props: {
                     loading="lazy"
                   />
                 </a>
+              ))}
+            </div>
+          </div>
+          <p
+            dangerouslySetInnerHTML={{
+              __html:
+                typeof project?.description === "string"
+                  ? markdown.parse(project?.description)
+                  : "",
+            }}
+            className="font-extralight font-sans text-sm md:text-base 2xl:text-lg leading-8"
+          ></p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col items-start gap-4 mt-4">
+            <p className="text-base mt-2 font-medium">Tech Stack</p>
+            <div className="flex flex-wrap gap-4 md:gap-10">
+              {project?.techStack.map((stack) => (
+                <p
+                  key={stack}
+                  className="px-5 py-2 border font-extralight text-xs tracking-widest bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)] uppercase"
+                >
+                  {stack}
+                </p>
               ))}
             </div>
           </div>

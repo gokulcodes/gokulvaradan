@@ -38,7 +38,7 @@ export default function Header() {
       ref={headerRef}
       className="absolute flex items-center w-full z-40 justify-center top-0"
     >
-      <div className="flex justify-evenly gap-20 items-center w-11/12 md:w-1/2 lg:w-full max-w-6xl py-8">
+      <div className="flex justify-evenly gap-20 items-center w-11/12 md:w-1/2 lg:w-full max-w-7xl py-8">
         <a
           className="font-display cursor-pointer hover:text-primary w-full font-light"
           href="#experiences"

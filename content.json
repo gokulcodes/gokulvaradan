@@ -1,5 +1,5 @@
 {
-  "about": "Welcome to my corner of the web! I'm a Full Stack Software Engineer driven by a deep curiosity and a passion for crafting powerful, elegant, and scalable applications using JavaScript/TypeScript and its ecosystem.",
+  "about": "Welcome to my corner of the web! I'm a Full Stack Software Engineer with a deep curiosity and passion for crafting powerful, elegant, and scalable applications using JavaScript/TypeScript and its ecosystem.",
   "stats": [
     {
       "title": "4+ Years",
@@ -21,23 +21,26 @@
   "experience": [
     {
       "companyName": "Synamedia",
-      "highlights": [
-        "Playing a pivotal role in a team responsible for creating a versatile cross-platform application, ensuring compatibility and optimal performance across mobile devices, web platforms, and hyperscale TV devices.",
-        "Developed comprehensive automated test scripts for internal modules using GitHub Actions to streamline development process.",
-        "Enhanced application performance significantly by implementing React Suspense and Lazy loading techniques, effectively reducing main thread load in browsers and optimizing user experience."
-      ],
+      "shortHighlights": "*   Spearheaded delivery of the beIN Senza application, taking full ownership of Player implementation to ensure high-quality, seamless functionality for a global user base.\n*   **Achieved a 50% reduction in app UI wake-up time (5s to 2.5s)** for the Bein HS App by optimizing API calls and frontend rendering with advanced caching and JavaScript/React techniques.\n*   Pioneered the use of LLMs (Ollama) for Clarissa log analysis, enhancing data validation and extracting actionable insights for product improvement; currently leading LLM integration for ATP automation.\n*   Championed automation testing and clean code practices (JavaScript/TypeScript), significantly improving release velocity, app stability, and overall codebase maintainability for HyperScale applications.,",
+      "highlights": "*   Spearheaded the **successful launch** of the **beIN Senza application**, upholding **stringent quality standards** for a global user base by taking **full ownership** of the Player implementation, ensuring its **robust** and **seamless functionality**, likely leveraging core **JavaScript/TypeScript** expertise.\n*   Ensured critical features like **Live Pause (Restart)** performed **flawlessly in production**, maintaining a seamless user experience through meticulous attention to **delivery deadlines** and staging processes.\n*   Significantly enhanced application monitoring by **stabilizing the Clarissa Logger**, providing the team with vital **real-time app and player insights** for proactive debugging.\n*   **Pioneered** the use of **LLMs (Ollama model)** to analyze Clarissa logs, **improving data validation** and unearthing **actionable insights** for continuous product refinement.\n*   Currently **boosting testing efficiency and coverage** by leading the integration of **LLMs** to **automate Prewritten Automated Test Procedures (ATP)**, fostering a more **bug-free** development cycle.\n*   Orchestrated **cohesive end-to-end solutions** for the **beIN Senza app** by fostering strong cross-functional collaboration, ensuring all components worked in harmony.\n*   Championed **high codebase quality** by actively participating in PR reviews, offering constructive feedback on **JavaScript/TypeScript** submissions to improve maintainability.\n*   Delivered on all stakeholder requirements for the **Bein HS App**, enhancing the user experience with crucial frontend features like **Live Pause (Restart and Pin at Entry)**, built with core web technologies and dynamic **JavaScript**.\n*   **Improved release velocity** and web app stability by championing **automation testing**, including developing and integrating test scripts (potentially using **JavaScript** frameworks) into the **CI/CD pipeline**.\n*   **Cut app UI wake-up time in half (from 5 to 2.5 seconds)**, dramatically improving responsiveness by **optimizing API calls** and fine-tuning frontend rendering of **JavaScript/React** components with **advanced caching**.\n*   **Modernized** the legacy HyperScale codebase, focusing on efficient **JavaScript** and resource management, leading to a **more stable app** and smoother user experience on HS devices.\n*   Promoted **best practices** in code readability and maintainability by consistently delivering **clean JavaScript/TypeScript code** and mentoring colleagues.\n*   Ensured **timely feature delivery** by meticulously analyzing requirements and designing solutions upfront, effectively resolving ambiguities before implementation.",
       "positionTitle": "Software Engineer",
+      "startDate": "2024-01-21T00:00+05:30",
+      "techStack": ["Nextjs", "aws", "reactjs", "rest API", "Video Player"]
+    },
+    {
+      "companyName": "Synamedia",
+      "shortHighlights": "*   **Secured a full product development contract** by rapidly delivering a high-impact AMT demo within one week, showcasing exceptional commitment and frontend presentation skills.\n*   Dramatically improved Hyperscale Go application stability by **resolving over 50 critical bugs**, ensuring on-time delivery and production readiness.\n*   Elevated user experience and visual appeal by leading UI/UX enhancements (10 Foot UI, GSAP animations), and delivered the entire Guide flow (recording, favorites) within one month.\n*   **Earned promotion in under a year** for outstanding performance, rapid skill development in frontend (JavaScript) and backend (Go) technologies, and significant project contributions.",
+      "highlights": "*   Delivered the **Hyperscale Go application** on schedule and **vastly improved its stability** by squashing **over 50 critical bugs**, many within the **JavaScript** frontend.\n*   **Instrumental in securing a full product development contract** by rapidly delivering a **compelling AMT demo within a week**, showcasing strong technical and frontend presentation skills.\n*   **Boosted HS app performance** and code health on Hyperscale devices by **optimizing code structure** and resource use, including targeted **JavaScript** enhancements.\n*   **Elevated the app's visual appeal and navigation**, earning **positive client feedback**, by leading UI/UX improvements such as a **10 Foot UI transformation** (from Figma to HTML/CSS/JavaScript) and creating sleek Preview banner animations, potentially using **GSAP**.\n*   Expanded core features and user engagement by developing the **entire Guide flow** (recording, favorites, action menu) **within one month**, featuring a significant **JavaScript-driven** frontend.\n*   Enriched the user experience by implementing key UI features like a customized Playerbanner and Bing banner integration using **JavaScript**, alongside synchronized Audio Subtitles.\n*   Enhanced **JavaScript code quality** and team collaboration through descriptive commenting and proactive PR reviews.\n*   **Earned a promotion to Software Engineer in under a year,** a testament to **outstanding performance**, **rapid skill acquisition** in areas like frontend development, and **impactful project contributions**.",
+      "positionTitle": "Associate Software Engineer",
       "startDate": "2022-11-21T00:00+05:30",
+      "endDate": "2023-12-21T00:00+05:30",
       "techStack": ["Nextjs", "aws", "reactjs", "rest API", "Video Player"]
     },
     {
       "companyName": "alter.game",
-      "highlights": [
-        "Lead the development of a cutting-edge 3D NFT marketplace platform from scratch using Next.js.",
-        "Implemented ThreeJS to provide users with an immersive experience, allowing them to render and upload 3D models for trading within the marketplace.",
-        "Automated the deployment process by creating a front-end build script that triggers deployment with every commit to the source control system."
-      ],
-      "positionTitle": "Full Stack Engineer",
+      "shortHighlights": "*   Led the ground-up development of a cutting-edge 3D NFT marketplace using **Next.js, TypeScript, and ThreeJS**, establishing a new, immersive product offering.\n*   **Drove an 80% increase in app downloads** for the company site by leading Lighthouse-based performance optimizations for the JavaScript/React frontend.\n*   **Doubled the hiring ratio (100% increase)** by developing and launching a dedicated recruiting platform with a React/JavaScript frontend.\n*   Successfully launched and maintained a production-ready **React Native** chat application, reliably serving **~10,000 daily active users**.",
+      "highlights": "*   Led the **ground-up development** of an **innovative 3D NFT marketplace**, utilizing **Next.js (a React framework)** and **TypeScript** to establish a **new company product line**.\n*   Crafted an **immersive trading experience** by integrating **ThreeJS** for 3D model rendering directly within the **JavaScript/Next.js** platform.\n*   **Accelerated the deployment pipeline** by creating an **automated front-end build script** (using **JavaScript/Node.js** tools) for the **Next.js** application, triggered by every commit.\n*   **Achieved an 80% uplift in app downloads** for the company site (a **JavaScript-based** platform, likely using **React/Next.js**) through targeted **Lighthouse optimizations** and **performance tuning**.\n*   **Increased the hiring ratio by 100%** by designing and launching a **dedicated recruiting platform**, with its frontend likely built using **React/JavaScript**.\n*   Successfully developed and supported a **production-ready chat application** built with **React Native**, serving around **10,000 daily active users.**",
+      "positionTitle": "Associate",
       "startDate": "2021-08-21T00:00+05:30",
       "endDate": "2022-10-24T00:00+05:30",
       "techStack": [
@@ -48,28 +51,16 @@
         "react native",
         "rest API"
       ]
-    },
-    {
-      "companyName": "Freelance",
-      "highlights": [
-        "Optimized our company site with lighthouse testing and achieved growth in app downloads by 80%",
-        "Developed a separate recruiting platform which helps to increase hiring ratio by 100%",
-        "Created a production-ready chat application in React Native for ~10,000 daily active users."
-      ],
-      "positionTitle": "Web development",
-      "startDate": "2019-06-05T00:00+05:30",
-      "endDate": "2021-08-05T00:00+05:30",
-      "techStack": ["reactjs", "aws", "graphql", "rest API"]
     }
   ],
   "projects": [
     {
       "projectName": "Markdown Canvas",
-      "shortDescription": "A lightweight, modular Markdown-to-HTML parser that supports all essential markdown features—including headings, lists, tables, blockquotes, code blocks, multimedia embedding, and rich word formatting",
-      "description": "A lightweight, modular Markdown-to-HTML parser that supports all essential markdown features—including headings, lists, tables, blockquotes, code blocks, multimedia embedding, and rich word formatting",
+      "description": "Built a lightweight, fully functional Markdown-to-HTML parser from scratch, implementing **recursive backtracking algorithms** and a **custom regex engine** to intelligently handle both line-based and inline syntax without external libraries.\n###   **Key Features & Technical Challenges:**\n*   Developed a **recursive token handling system** supporting deeply nested Markdown elements (e.g., bold within italic, lists within lists).\n*   Designed and implemented a **custom regex-based grammar engine** for precise detection and processing of diverse Markdown syntax (bold, italic, links, images, etc.).\n*   Engineered robust parsing for complex structures including **multi-level nested lists** (ordered/unordered), **code blocks** with preserved formatting, **tables** (header/row parsing), and custom expressions (image titles, link metadata).\n*   Successfully managed parsing complexities by developing separate logic for **line-level blocks** and **inline tokens**, utilizing dynamic pointer tracking for recursive boundary management.\n###   **Core Algorithms & Implementation:**\n*   Utilized a **pointer-based recursive word parser** for character-by-character content analysis, ensuring accurate handling of deeply nested expressions.\n*   Implemented an **indentation-aware custom list renderer** with tab depth tracking for generating semantically correct nested HTML lists.\n*   Developed a **dynamic table parser** that intelligently splits rows/columns, discards alignment syntax, and converts markdown tables into clean HTML.\n*   **Impact & Application:** Provides a performant and dependency-free solution for embedding markdown parsing in web applications, CMS/blog engines, developer documentation sites, and lightweight editors (React/Vanilla JS environments), showcasing deep understanding of language parsing, regex design, and stateful recursive algorithms.\n*   **Tech Stack:** **TypeScript/JavaScript**, Custom Regex Engine, Recursive Backtracking Algorithms, Modular Parsing Utilities. ",
+      "shortDescription": "A lightweight, modular Markdown-to-HTML parser that supports all essential markdown features—including headings, lists, tables, blockquotes, code blocks, multimedia embedding, and rich word formatting. Even my portfolio website uses this library to render Markdown contents",
       "techStack": ["nextjs", "vercel", "markdown-parser"],
       "date": "April 2025",
-      "preview": ["", ""],
+      "preview": "/markdown-canvas/preview-0.png",
       "links": [
         "https://github.com/gokulcodes/markdown-canvas",
         "https://markdown.gokulcodes.dev/",
@@ -81,8 +72,8 @@
       "logo": "/lattize.svg",
       "date": "April 2025",
       "shortDescription": "A Chrome DevTools extension that shows overall performance metrics of any website.",
-      "preview": ["", ""],
-      "description": "A Chrome DevTools extension that shows overall performance metrics of any website.",
+      "preview": "/lattize/preview-0.png",
+      "description": "** Developed **Lattize**, a comprehensive Chrome DevTools extension designed to provide developers with in-depth website performance metrics, DOM insights, and network analysis, leveraging a wide array of **Chrome APIs**.\n### **Key Features & Technical Challenges:**\n*   Implemented real-time monitoring and reporting of critical performance metrics: **Total Nodes Rendered, Memory Consumption (RAM), System Specs (CPU, Cores), Average FPS on Repaint, Core Web Vitals (FCP, LCP, TBT)**.\n*   Engineered a **DOM Tree Visualizer** that maps element dependencies to CSS and API calls, including **maximum depth analysis** and **parsing times for HTML (DOM) & CSS (CSSOM)**.\n*   Developed a **simultaneous network request visualizer** detailing API call specifics (timing, blocking status, cached responses, data consumed) by deeply integrating with `chrome.webRequests`.\n*   Integrated features for **SEO analysis** (OG tag preview across social platforms), **security violation detection**, and **accessibility recommendations**.\n### **Core Implementation & Chrome API Usage:**\n*   Extensively utilized Chrome APIs including `chrome.processes` (memory, CPU), `chrome.system.cpu`, `chrome.webRequests` (network monitoring), `chrome.dom` (DOM traversal - *conceptual, actual DOM access is via content scripts*), `chrome.performance` (Core Web Vitals), and `chrome.storage` (settings).\n*   Designed the extension architecture to efficiently collect, process, and present complex data within the DevTools panel interface.\n*   Challenged by asynchronous data collection from multiple APIs and presenting it in a synchronized, user-friendly manner.\n*   **Impact & Application:** Empowers developers with a powerful, integrated tool to diagnose performance bottlenecks, optimize resource loading, improve SEO, and enhance web accessibility directly within their development workflow.",
       "techStack": ["ReactJS", "CRXJS", "Vite", "Chrome Extension"],
       "links": ["https://github.com/gokulcodes/lattize"]
     },
@@ -91,8 +82,8 @@
       "logo": "/ideal.svg",
       "date": "April 2025",
       "shortDescription": "A minimal, fast, and distraction-free text editor built for the web. Perfect for taking quick notes, writing drafts, or capturing ideas on the go — all with seamless cloud storage.",
-      "preview": ["", ""],
-      "description": "A minimal, fast, and distraction-free text editor built for the web. Perfect for taking quick notes, writing drafts, or capturing ideas on the go — all with seamless cloud storage.",
+      "preview": "/ideal-editor/preview-0.png",
+      "description": "Created **Ideal Editor**, a fast, distraction-free, web-based text editor focused on core writing functionalities, featuring seamless cloud/local storage and innovative data structures for efficient text manipulation.\n### **Key Features & Technical Challenges:**\n*   Implemented a comprehensive set of text editing features: file/folder management, image support, focus mode, **AI-powered word suggestions**, and rich text formatting (headings, lists, code, tables).\n*   Designed and built core editor functionalities from scratch, including complex cursor movements, multi-level selection (character, line, block), copy/paste, undo/redo, and search, ensuring a responsive user experience.\n*   Developed a **virtualized line rendering** system to efficiently handle large documents and maintain performance.\n*   Integrated **cloud and local storage options** for seamless data persistence and accessibility.\n### **Core Algorithms & Data Structures:**\n*   Architected the editor's core using a **custom N-Array Tree data structure with LinkedList pointers** (`Line` and `Letter` classes) for efficient storage and manipulation of text at character and line levels.\n*   Developed modular algorithms for all fundamental text operations (insertion, deletion, cursor movement, selection) directly manipulating this custom data structure.\n*   Tackled the complexity of maintaining consistent editor state and cursor positioning across diverse editing operations and keyboard shortcuts.\n*   **Impact & Application:** Offers a lightweight, performant alternative to traditional text editors for quick note-taking, drafting, and idea capture, showcasing advanced data structure implementation and algorithm design for a core computing problem.",
       "techStack": ["nextjs", "vercel", "typescript"],
       "links": [
         "https://github.com/gokulcodes/ideal-editor-web/",
@@ -104,8 +95,8 @@
       "logo": "/gamuts.svg",
       "date": "May 2025",
       "shortDescription": "A minimal, fast, and distraction-free text editor built for the web. Perfect for taking quick notes, writing drafts, or capturing ideas on the go — all with seamless cloud storage.",
-      "preview": ["", ""],
-      "description": "A minimal, fast, and distraction-free text editor built for the web. Perfect for taking quick notes, writing drafts, or capturing ideas on the go — all with seamless cloud storage.",
+      "preview": "/gamuts/preview-0.png",
+      "description": "** Developed **Gamuts**, an intuitive web-based tool enabling users to quickly sketch diagrams with a hand-drawn feel and transform them into polished, professional-looking visuals, featuring an infinite canvas and diverse editing capabilities.\n### **Key Features & Technical Challenges:**\n*   Implemented a rich set of drawing tools: **free-hand drawing, pre-defined shapes (circles, rectangles, polygons, lines, arrows)** with extensive customization options (style, color, stroke, fill, rotation, reshaping).\n*   Engineered an **infinite canvas** with smooth zooming and panning, supporting complex object manipulation including grouping, layering, and connections between shapes.\n*   Integrated text and image support with advanced editing features: font styling, image filters (blur, HUE, saturation), cropping, and resizing.\n*   Designed a **video editing mode** with scene creation, timeline management, and frame-by-frame animation capabilities, exporting to MP4.\n### **Core Implementation & Architecture:**\n*   Utilized a canvas rendering library (e.g., **Konva.js, Fabric.js, or native Canvas API** - *specify which one if used*) to manage and render graphical objects and interactions.\n*   Architected a modular system with distinct components: `ToolBar`, `Zoomer`, `ExportControls`, `OptionsBar` (contextual to selected shape), and `Undo/Redo` manager.\n*   Addressed challenges in managing complex state for numerous objects on an infinite canvas, implementing efficient hit detection, selection, and transformation logic.\n*   **Impact & Application:** Provides a versatile and user-friendly platform for creating a wide range of visual content, from simple sketches and diagrams to more complex illustrations and animated presentations, demonstrating skills in 2D graphics, UI/UX for creative tools, and complex state management.",
       "techStack": ["reactjs", "vite", "typescript", "canvas"],
       "links": [
         "https://github.com/gokulcodes/gamuts",
@@ -116,9 +107,9 @@
       "projectName": "Circles",
       "logo": "/circles.svg",
       "date": "June 2025",
-      "preview": ["", ""],
+      "preview": "/circles/preview-0.png",
       "shortDescription": "A text based distraction-free personal space for connecting with your closed circles.",
-      "description": "A text based distraction-free personal space for connecting with your closed circles.",
+      "description": "** Built **Circles**, a distraction-free, text-only social application designed for connecting with close friends, emphasizing privacy, real-time communication, and secure interactions.\n### **Key Features & Technical Challenges:**\n*   Developed core social features: user signup/login (with **reCAPTCHA v3**), friend request system (add/reject/delete/block), profile management (auto-generated avatars, status, last seen).\n*   Implemented real-time 1:1 and group chat functionalities using **WebSockets**, including message actions (reply, delete, star, pin, react), lazy loading of history, and typing indicators.\n*   Designed and integrated a basic **End-to-End Encryption** mechanism for 1:1 chats using public/private key pairs to enhance message privacy.\n*   Focused on security with **rate limiting** for API calls and ensured all secured API interactions utilized auth tokens managed via cookies.\n### **Core Architecture & Backend Implementation:**\n*   Utilized a **Next.js (App Router)** frontend with middleware for auth and cookie management, hosted on Vercel.\n*   Planned a backend with **GraphQL/REST API** options, **Socket.IO** (or similar) for real-time bidirectional communication, and **MongoDB (M0 Serverless)** for data persistence, intended for an **EC2 instance**.\n*   Tackled challenges in managing real-time connections, synchronizing state across clients, and implementing a secure authentication and authorization flow.\n*   **Impact & Application:** Offers a minimalist and secure platform for private text-based communication, showcasing abilities in full-stack development, real-time application architecture, basic cryptography implementation, and secure API design.",
       "techStack": ["nextjs", "typescript", "graphql", "aws"],
       "links": [
         "https://github.com/gokulcodes/circles",
@@ -128,16 +119,24 @@
   ],
   "achievements": [
     {
-      "title": "Released internal college student database in symposium",
-      "date": "June 2019"
+      "title": "India Site Excellence Award",
+      "date": "June 2025"
+    },
+    {
+      "title": "Featured in company-wide newsletter for teamwork and technical excellence.",
+      "date": "Nov 2024"
+    },
+    {
+      "title": "Solved over 2000+ problems across coding platform",
+      "date": "All Time"
     },
     {
       "title": "3* in CodeChef",
       "date": "Feb 2022"
     },
     {
-      "title": "Solved over 2000+ problems across coding platform",
-      "date": "June 2025"
+      "title": "Launched internal college student database during symposium.",
+      "date": "June 2019"
     }
   ],
   "stacks": [
@@ -148,6 +147,8 @@
     "AWS",
     "Cloud",
     "Nextjs",
+    "LLM",
+    "AI",
     "GSAP",
     "Threejs",
     "Video Players",
