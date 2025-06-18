@@ -102,7 +102,7 @@ export default function About() {
           />
           <p
             id="about-content"
-            className="font-sans text-justify font-light leading-10 text-lg md:text-lg 2xl:text-xl break-words"
+            className="font-sans text-left font-light leading-10 text-lg md:text-lg 2xl:text-xl break-words"
           >
             {content.about}
           </p>

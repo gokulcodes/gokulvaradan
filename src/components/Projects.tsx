@@ -57,7 +57,10 @@ export default function Projects() {
               key={project.projectName}
               onMouseEnter={handleCustomMouseEnter}
               onMouseLeave={handleCustomMouseLeave}
-              onClick={() => handleProjectModal(index)}
+              onClick={() => {
+                handleProjectModal(index);
+                handleCustomMouseLeave();
+              }}
               style={{ viewTransitionName: "project" }}
               className="border sticky top-20 border-white hover:bg-background bg-background/40 backdrop-blur-2xl p-6 md:p-10 2xl:p-20 flex flex-col gap-4 hover:border-primary hover:drop-shadow-[10px_10px_0px_rgba(72,223,105,0.5)]"
             >
@@ -88,7 +91,7 @@ export default function Projects() {
               </div>
               <p
                 id="shortDescription"
-                // className="font-extralight text-justify font-sans text-sm md:text-base 2xl:text-lg leading-8"
+                // className="font-extralight text-left font-sans text-sm md:text-base 2xl:text-lg leading-8"
                 dangerouslySetInnerHTML={{
                   __html: markdown.parse(project.shortDescription),
                 }}

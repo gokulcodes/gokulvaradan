@@ -78,7 +78,10 @@ export default function Experience() {
               onMouseEnter={handleCustomMouseEnter}
               onMouseLeave={handleCustomMouseLeave}
               key={exp.positionTitle}
-              onClick={() => handleExperienceModal(index)}
+              onClick={() => {
+                handleExperienceModal(index);
+                handleCustomMouseLeave();
+              }}
               className="flex flex-col sticky top-20 hover:border-primary hover:drop-shadow-[10px_10px_0px_rgba(72,223,105,0.5)] hover:bg-background bg-background/40 backdrop-blur-2xl h-full p-6 md:p-10 2xl:p-15 border border-white font-display gap-2 experience w-full"
             >
               <div className="flex flex-col md:flex-row w-full justify-between gap-2">
@@ -105,7 +108,7 @@ export default function Experience() {
                   Key Highlights
                 </p>
                 <div
-                  className="tracking-wide text-justify"
+                  className="tracking-wide text-left"
                   dangerouslySetInnerHTML={{
                     __html: markdown.parse(exp.shortHighlights),
                   }}
