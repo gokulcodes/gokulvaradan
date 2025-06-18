@@ -2,6 +2,7 @@ import Image from "next/image";
 import content from "../../content.json";
 import ProjectModal from "./ProjectModal";
 import { useState } from "react";
+import markdown from "@gokulvaradan/markdown-parser";
 export default function Projects() {
   const [currentProject, setCurrentProject] = useState(-1);
 
@@ -85,9 +86,13 @@ export default function Projects() {
                 )}
                 <h2 className="text-2xl 2xl:text-4xl">{project.projectName}</h2>
               </div>
-              <p className="font-extralight font-sans text-sm md:text-base 2xl:text-lg leading-8">
-                {project.shortDescription}
-              </p>
+              <p
+                id="shortDescription"
+                // className="font-extralight text-justify font-sans text-sm md:text-base 2xl:text-lg leading-8"
+                dangerouslySetInnerHTML={{
+                  __html: markdown.parse(project.shortDescription),
+                }}
+              ></p>
               <div className="flex flex-col items-start gap-4 mt-4">
                 <p className="text-base mt-2 font-medium">Tech Stack</p>
                 <div className="flex flex-wrap gap-4 md:gap-10">

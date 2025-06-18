@@ -19,6 +19,7 @@ export default function CustomCursor() {
         left: position.x,
         top: position.y,
         opacity: 0,
+        zIndex: 999999,
         // opacity: visible ? 1 : 0,
       }}
       className="fixed text-xs pointer-events-none flex items-center justify-center text-center z-50 w-20 h-20 font-display uppercase rounded-full text-background bg-primary transition-opacity duration-200 transform -translate-x-1/2 -translate-y-1/2"

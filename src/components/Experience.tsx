@@ -105,6 +105,7 @@ export default function Experience() {
                   Key Highlights
                 </p>
                 <div
+                  className="tracking-wide text-justify"
                   dangerouslySetInnerHTML={{
                     __html: markdown.parse(exp.shortHighlights),
                   }}

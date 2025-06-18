@@ -84,7 +84,7 @@ export default function RootLayout({
       ></script>
       {/* <link rel="icon"  href="/gamuts.svg" /> */}
       <body
-        className="overflow-x-hidden"
+        className="overflow-x-hidden antialiased"
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}

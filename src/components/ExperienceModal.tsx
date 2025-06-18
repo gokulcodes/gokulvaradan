@@ -43,7 +43,7 @@ export default function ExperienceModal(props: {
       </div> */}
       <div
         key={experience?.positionTitle}
-        className="flex flex-col md:p-10 2xl:p-15 font-display gap-2 experience w-full"
+        className="flex flex-col md:p-10 2xl:p-15 font-display gap-2 experience w-full 2xl:max-w-7xl max-w-4xl"
       >
         <div className="flex flex-col md:flex-row w-full justify-between gap-2">
           <p className="uppercase font-extralight tracking-title text-base md:text-xs ">
@@ -69,6 +69,7 @@ export default function ExperienceModal(props: {
             Key Highlights
           </p>
           <div
+            className="tracking-wide text-justify"
             dangerouslySetInnerHTML={{
               __html: experience ? markdown.parse(experience?.highlights) : "",
             }}
