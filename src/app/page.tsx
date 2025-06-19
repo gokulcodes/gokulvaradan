@@ -184,12 +184,12 @@ export default function Home() {
           <Stacks />
           <Footer />
           <a
-            href="/Gokul_Varadan_2025.pdf"
-            download={true}
+            href="https://1drv.ms/w/c/8EBA3876469481B1/ETAVdFc5ySlMphwRSnL1Z30Bgq0vXYW2Tu80eGuLrSAGJw?e=WDGX5E"
+            target="_blank"
             className="fixed flex items-center gap-2 font-extralight  shadow-2xl text-sm bottom-5 md:bottom-10 font-display cursor-pointer hover:drop-shadow-[10px_10px_0px_rgba(72,223,105,0.5)] p-4 md:px-6 md:py-4 hover:text-primary border border-primary right-5 md:right-10 bg-background drop-shadow-[5px_5px_0px_rgba(72,223,105,0.5)]"
           >
             <p className="link hidden md:block text-xs 2xl:text-base ">
-              Export Resume
+              View Resume
             </p>
             <Image
               src="/download.svg"
