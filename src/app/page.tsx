@@ -192,7 +192,7 @@ export default function Home() {
               View Resume
             </p>
             <Image
-              src="/download.svg"
+              src="/redirect.svg"
               className="w-4 2xl:w-5 invert"
               alt=""
               width={100}
