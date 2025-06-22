@@ -82,7 +82,7 @@ export default function About() {
               start: "top bottom", // Trigger when #stats top reaches 80% of viewport
               toggleActions: "play none none none", // Play once
             },
-            stagger: 0.03,
+            stagger: 0.01,
           }
         );
       },
