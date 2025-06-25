@@ -12,7 +12,7 @@ export default function CustomCursor() {
     window.addEventListener("mousemove", move);
     return () => window.removeEventListener("mousemove", move);
   }, []);
-
+  // console.log(position);
   return (
     <div
       style={{

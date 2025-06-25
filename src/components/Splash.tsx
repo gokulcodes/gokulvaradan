@@ -15,14 +15,14 @@ export default function Splash() {
           delay: 1.5,
           ease: "power4.inOut",
           height: "100vh",
-          //   duration: 1,
+          duration: 1,
           //   opacity: 1,
         },
         {
           delay: 1.5,
           ease: "power4.inOut",
           height: "0vh",
-          //   duration: 1,
+          duration: 1,
           //   opacity: 0,
         }
       );
@@ -89,7 +89,8 @@ export default function Splash() {
   return (
     <div
       ref={splashRef}
-      className="absolute top-0 left-0 w-full bg-background overflow-hidden h-[100vh] splash z-50"
+      id="splash"
+      className="absolute top-0 left-0 w-full bg-background overflow-hidden h-[100vh] splash z-50 shadow-2xl"
     >
       <div className="flex items-center h-full absolute -z-10 left-0 w-full gap-32 justify-center transform scale-200 splashImage md:scale-150">
         {Array.from({ length: 10 }).map((_, index) => (

@@ -1,13 +1,17 @@
 @import "tailwindcss";
 
 * {
-  transition: all 0.2s ease;
+  /* transition: all 0.2s ease; */
   scroll-behavior: smooth;
   /* cursor: none; */
 }
 
+/* #splash {
+  transition: all 0.2s ease;
+} */
+
 :root {
-  --background: #181818;
+  --background: #121212;
   --foreground: #fafafa;
 }
 ::selection {

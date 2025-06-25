@@ -7,7 +7,8 @@ export default function Footer() {
     gsap.from(".nameImage", {
       y: 100,
       opacity: 0,
-      duration: 1,
+      delay: 1,
+      duration: 2,
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".achievements",
@@ -20,7 +21,7 @@ export default function Footer() {
   }, {});
   return (
     <footer className="w-full h-full flex items-center justify-center footer">
-      <div className="2xl:max-w-7xl max-w-4xl w-11/12 md:w-full border-x pt-20 md:pt-20 border-white/20 flex flex-col gap-10 md:gap-20 h-full items-start justify-start">
+      <div className="2xl:max-w-7xl max-w-4xl w-11/12 md:w-full border-x pt-20 md:pt-20 border-white/0 flex flex-col gap-10 md:gap-20 h-full items-start justify-start">
         <div className="flex flex-col gap-10 md:flex-row w-full justify-between font-display">
           <div className="flex flex-col items-start gap-2">
             <p className="uppercase tracking-widest opacity-50 text-sm ">

@@ -90,7 +90,7 @@ export default function About() {
   }, {});
   return (
     <div id="about" className="flex w-full justify-center items-center">
-      <div className="flex flex-col gap-20 border-x border-white/20 w-11/12 md:w-full max-w-4xl 2xl:max-w-7xl ">
+      <div className="flex flex-col gap-20 border-x border-white/0 w-11/12 md:w-full max-w-4xl 2xl:max-w-7xl ">
         <div className="flex flex-col md:flex-row gap-10 p-6 justify-center items-center">
           <Image
             src="/about.svg"

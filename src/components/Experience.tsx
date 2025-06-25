@@ -68,7 +68,7 @@ export default function Experience() {
       id="experiences"
       className="w-full flex items-start justify-center"
     >
-      <div className="2xl:max-w-7xl max-w-4xl w-11/12 md:w-full border-x border-white/20 pt-40 flex flex-col gap-10 h-full items-start justify-start pb-20">
+      <div className="2xl:max-w-7xl max-w-4xl w-11/12 md:w-full border-x border-white/0 pt-40 flex flex-col gap-10 h-full items-start justify-start pb-20">
         <p className="px-5 py-2 sticky top-3 border font-display bg-background border-white drop-shadow-[5px_5px_0px_rgba(255,255,255,0.5)]">
           My Experience
         </p>
