@@ -22,7 +22,6 @@ export default function Header() {
           paused: true,
         });
         link.addEventListener("mouseenter", () => {
-          console.log(link);
           tween.play();
         });
         link.addEventListener("mouseleave", () => {

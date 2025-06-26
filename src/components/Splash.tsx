@@ -1,3 +1,4 @@
+// import { stringPatternCompare } from "@/utils";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
@@ -85,7 +86,7 @@ export default function Splash() {
     },
     { scope: splashRef }
   );
-
+  // stringPatternCompare();
   return (
     <div
       ref={splashRef}
