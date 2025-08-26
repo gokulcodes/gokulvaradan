@@ -143,7 +143,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="absolute -z-10 opacity-20 w-full h-full -left-96 md:scale-200 scale-90 top-30 md:top-10 2xl:top-20 md:left-30">
+      <div className="absolute -z-10 opacity-20 w-[100vw] overflow-hidden h-full md:scale-200 scale-90 top-30 md:top-10 2xl:top-20 md:left-30">
         <svg
           width="1456"
           height="100%"

@@ -92,17 +92,21 @@ export default function Footer() {
               >
                 Projects
               </a>
-              {/* <a href="" className="flex gap-1 uppercase font-light font-sans tracking-wider text-xs cursor-pointer hover:text-primary link ">
-                Twitter.com
-                <Image
+              <a
+                href="https://blogs.gokulcodes.dev/"
+                target="_blank"
+                className="flex gap-1 uppercase font-light font-sans tracking-wider text-xs cursor-pointer hover:text-primary link "
+              >
+                Blogs
+                {/* <Image
                   src="/redirect.svg"
                   className="w-4 dark:invert"
                   alt=""
                   width={100}
                   height={100}
                   loading="lazy"
-                />
-              </p> */}
+                /> */}
+              </a>
             </div>
           </div>
           <div className="flex flex-col items-start gap-2">
